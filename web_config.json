@@ -1,0 +1,20 @@
+{
+  "image_base_path": "extracted_data",
+  "video_alias_mapping": "video_alias_mapping.json",
+  "supported_video_formats": [
+    "K03_",
+    "K01_",
+    "K02_",
+    "L21_",
+    "L22_",
+    "L23_",
+    "L24_",
+    "L25_",
+    "L26_",
+    "L27_",
+    "L28_",
+    "L29_",
+    "L30_"
+  ],
+  "fallback_search": true
+}

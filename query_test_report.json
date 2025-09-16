@@ -1,0 +1,2532 @@
+{
+  "summary": {
+    "total_tests": 46,
+    "successful_tests": 46,
+    "failed_tests": 0,
+    "success_rate": 100.0,
+    "avg_search_time": 2.0879542153814565
+  },
+  "test_results": [
+    {
+      "query": "buffalo",
+      "description": "Tìm trâu/bò",
+      "search_time": 2.1272644996643066,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "top_results": [
+        {
+          "filename": "L21_V001/099.jpg",
+          "id": "L21_V001/099.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V001\\099.jpg",
+          "rank": 1,
+          "similarity": 0.2873208522796631,
+          "translated_query": null
+        },
+        {
+          "filename": "L21_V013/085.jpg",
+          "id": "L21_V013/085.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V013\\085.jpg",
+          "rank": 2,
+          "similarity": 0.284292608499527,
+          "translated_query": null
+        },
+        {
+          "filename": "L21_V001/101.jpg",
+          "id": "L21_V001/101.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V001\\101.jpg",
+          "rank": 3,
+          "similarity": 0.2828103005886078,
+          "translated_query": null
+        },
+        {
+          "filename": "L24_V023/153.jpg",
+          "id": "L24_V023/153.jpg",
+          "path": "static\\images\\Keyframes_L24\\keyframes\\L24_V023\\153.jpg",
+          "rank": 4,
+          "similarity": 0.28009992837905884,
+          "translated_query": null
+        },
+        {
+          "filename": "L29_V008/077.jpg",
+          "id": "L29_V008/077.jpg",
+          "path": "static\\images\\Keyframes_L29\\keyframes\\L29_V008\\077.jpg",
+          "rank": 5,
+          "similarity": 0.2784786522388458,
+          "translated_query": null
+        }
+      ],
+      "expected_keywords": [
+        "buffalo",
+        "animal"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "con trâu",
+      "description": "Tìm trâu bằng tiếng Việt",
+      "search_time": 2.0918312072753906,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "top_results": [
+        {
+          "filename": "L22_V007/161.jpg",
+          "id": "L22_V007/161.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V007\\161.jpg",
+          "rank": 1,
+          "similarity": 0.2743839919567108,
+          "translated_query": "con buffalo"
+        },
+        {
+          "filename": "L22_V007/158.jpg",
+          "id": "L22_V007/158.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V007\\158.jpg",
+          "rank": 2,
+          "similarity": 0.25356525182724,
+          "translated_query": "con buffalo"
+        },
+        {
+          "filename": "L25_V021/374.jpg",
+          "id": "L25_V021/374.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V021\\374.jpg",
+          "rank": 3,
+          "similarity": 0.2511632442474365,
+          "translated_query": "con buffalo"
+        },
+        {
+          "filename": "L21_V001/099.jpg",
+          "id": "L21_V001/099.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V001\\099.jpg",
+          "rank": 4,
+          "similarity": 0.24951109290122986,
+          "translated_query": "con buffalo"
+        },
+        {
+          "filename": "L22_V010/201.jpg",
+          "id": "L22_V010/201.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V010\\201.jpg",
+          "rank": 5,
+          "similarity": 0.24757182598114014,
+          "translated_query": "con buffalo"
+        }
+      ],
+      "expected_keywords": [
+        "buffalo",
+        "animal"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "cow",
+      "description": "Tìm bò",
+      "search_time": 2.0878264904022217,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "top_results": [
+        {
+          "filename": "L21_V008/075.jpg",
+          "id": "L21_V008/075.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V008\\075.jpg",
+          "rank": 1,
+          "similarity": 0.31037408113479614,
+          "translated_query": null
+        },
+        {
+          "filename": "L22_V011/059.jpg",
+          "id": "L22_V011/059.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V011\\059.jpg",
+          "rank": 2,
+          "similarity": 0.3103306293487549,
+          "translated_query": null
+        },
+        {
+          "filename": "L22_V011/057.jpg",
+          "id": "L22_V011/057.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V011\\057.jpg",
+          "rank": 3,
+          "similarity": 0.3029066324234009,
+          "translated_query": null
+        },
+        {
+          "filename": "L22_V011/055.jpg",
+          "id": "L22_V011/055.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V011\\055.jpg",
+          "rank": 4,
+          "similarity": 0.3026718199253082,
+          "translated_query": null
+        },
+        {
+          "filename": "L22_V011/056.jpg",
+          "id": "L22_V011/056.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V011\\056.jpg",
+          "rank": 5,
+          "similarity": 0.3022650480270386,
+          "translated_query": null
+        }
+      ],
+      "expected_keywords": [
+        "cow",
+        "animal"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "dog",
+      "description": "Tìm chó",
+      "search_time": 2.1042680740356445,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "top_results": [
+        {
+          "filename": "L21_V008/302.jpg",
+          "id": "L21_V008/302.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V008\\302.jpg",
+          "rank": 1,
+          "similarity": 0.28616201877593994,
+          "translated_query": null
+        },
+        {
+          "filename": "L21_V001/272.jpg",
+          "id": "L21_V001/272.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V001\\272.jpg",
+          "rank": 2,
+          "similarity": 0.28533872961997986,
+          "translated_query": null
+        },
+        {
+          "filename": "L21_V006/241.jpg",
+          "id": "L21_V006/241.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V006\\241.jpg",
+          "rank": 3,
+          "similarity": 0.28504085540771484,
+          "translated_query": null
+        },
+        {
+          "filename": "L22_V025/199.jpg",
+          "id": "L22_V025/199.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V025\\199.jpg",
+          "rank": 4,
+          "similarity": 0.28478699922561646,
+          "translated_query": null
+        },
+        {
+          "filename": "L21_V010/257.jpg",
+          "id": "L21_V010/257.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V010\\257.jpg",
+          "rank": 5,
+          "similarity": 0.28423774242401123,
+          "translated_query": null
+        }
+      ],
+      "expected_keywords": [
+        "dog",
+        "animal"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "cat",
+      "description": "Tìm mèo",
+      "search_time": 2.0883829593658447,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "top_results": [
+        {
+          "filename": "L25_V006/085.jpg",
+          "id": "L25_V006/085.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V006\\085.jpg",
+          "rank": 1,
+          "similarity": 0.2930527627468109,
+          "translated_query": null
+        },
+        {
+          "filename": "L25_V031/294.jpg",
+          "id": "L25_V031/294.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V031\\294.jpg",
+          "rank": 2,
+          "similarity": 0.292371928691864,
+          "translated_query": null
+        },
+        {
+          "filename": "L25_V003/064.jpg",
+          "id": "L25_V003/064.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V003\\064.jpg",
+          "rank": 3,
+          "similarity": 0.29233187437057495,
+          "translated_query": null
+        },
+        {
+          "filename": "L25_V068/413.jpg",
+          "id": "L25_V068/413.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V068\\413.jpg",
+          "rank": 4,
+          "similarity": 0.29230836033821106,
+          "translated_query": null
+        },
+        {
+          "filename": "L25_V024/050.jpg",
+          "id": "L25_V024/050.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V024\\050.jpg",
+          "rank": 5,
+          "similarity": 0.2922472357749939,
+          "translated_query": null
+        }
+      ],
+      "expected_keywords": [
+        "cat",
+        "animal"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "bird",
+      "description": "Tìm chim",
+      "search_time": 2.0976874828338623,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "top_results": [
+        {
+          "filename": "L21_V007/158.jpg",
+          "id": "L21_V007/158.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V007\\158.jpg",
+          "rank": 1,
+          "similarity": 0.2881799340248108,
+          "translated_query": null
+        },
+        {
+          "filename": "L29_V003/238.jpg",
+          "id": "L29_V003/238.jpg",
+          "path": "static\\images\\Keyframes_L29\\keyframes\\L29_V003\\238.jpg",
+          "rank": 2,
+          "similarity": 0.28667813539505005,
+          "translated_query": null
+        },
+        {
+          "filename": "L22_V005/144.jpg",
+          "id": "L22_V005/144.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V005\\144.jpg",
+          "rank": 3,
+          "similarity": 0.2828880548477173,
+          "translated_query": null
+        },
+        {
+          "filename": "L21_V026/216.jpg",
+          "id": "L21_V026/216.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V026\\216.jpg",
+          "rank": 4,
+          "similarity": 0.2817324995994568,
+          "translated_query": null
+        },
+        {
+          "filename": "L24_V026/062.jpg",
+          "id": "L24_V026/062.jpg",
+          "path": "static\\images\\Keyframes_L24\\keyframes\\L24_V026\\062.jpg",
+          "rank": 5,
+          "similarity": 0.2812037467956543,
+          "translated_query": null
+        }
+      ],
+      "expected_keywords": [
+        "bird",
+        "animal"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "car",
+      "description": "Tìm xe hơi",
+      "search_time": 2.085052967071533,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "top_results": [
+        {
+          "filename": "L21_V011/080.jpg",
+          "id": "L21_V011/080.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V011\\080.jpg",
+          "rank": 1,
+          "similarity": 0.28608983755111694,
+          "translated_query": null
+        },
+        {
+          "filename": "L22_V015/294.jpg",
+          "id": "L22_V015/294.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V015\\294.jpg",
+          "rank": 2,
+          "similarity": 0.28248441219329834,
+          "translated_query": null
+        },
+        {
+          "filename": "L22_V018/107.jpg",
+          "id": "L22_V018/107.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V018\\107.jpg",
+          "rank": 3,
+          "similarity": 0.2820289134979248,
+          "translated_query": null
+        },
+        {
+          "filename": "L22_V010/014.jpg",
+          "id": "L22_V010/014.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V010\\014.jpg",
+          "rank": 4,
+          "similarity": 0.28068310022354126,
+          "translated_query": null
+        },
+        {
+          "filename": "L22_V031/296.jpg",
+          "id": "L22_V031/296.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V031\\296.jpg",
+          "rank": 5,
+          "similarity": 0.2799363434314728,
+          "translated_query": null
+        }
+      ],
+      "expected_keywords": [
+        "car",
+        "vehicle"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "xe hơi",
+      "description": "Tìm xe hơi bằng tiếng Việt",
+      "search_time": 2.099587917327881,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "top_results": [
+        {
+          "filename": "L21_V011/080.jpg",
+          "id": "L21_V011/080.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V011\\080.jpg",
+          "rank": 1,
+          "similarity": 0.28608983755111694,
+          "translated_query": "car"
+        },
+        {
+          "filename": "L22_V015/294.jpg",
+          "id": "L22_V015/294.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V015\\294.jpg",
+          "rank": 2,
+          "similarity": 0.28248441219329834,
+          "translated_query": "car"
+        },
+        {
+          "filename": "L22_V018/107.jpg",
+          "id": "L22_V018/107.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V018\\107.jpg",
+          "rank": 3,
+          "similarity": 0.2820289134979248,
+          "translated_query": "car"
+        },
+        {
+          "filename": "L22_V010/014.jpg",
+          "id": "L22_V010/014.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V010\\014.jpg",
+          "rank": 4,
+          "similarity": 0.28068310022354126,
+          "translated_query": "car"
+        },
+        {
+          "filename": "L22_V031/296.jpg",
+          "id": "L22_V031/296.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V031\\296.jpg",
+          "rank": 5,
+          "similarity": 0.2799363434314728,
+          "translated_query": "car"
+        }
+      ],
+      "expected_keywords": [
+        "car",
+        "vehicle"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "motorcycle",
+      "description": "Tìm xe máy",
+      "search_time": 2.110853672027588,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "top_results": [
+        {
+          "filename": "L22_V016/314.jpg",
+          "id": "L22_V016/314.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V016\\314.jpg",
+          "rank": 1,
+          "similarity": 0.3036344647407532,
+          "translated_query": null
+        },
+        {
+          "filename": "L21_V023/102.jpg",
+          "id": "L21_V023/102.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V023\\102.jpg",
+          "rank": 2,
+          "similarity": 0.3006030321121216,
+          "translated_query": null
+        },
+        {
+          "filename": "L21_V022/121.jpg",
+          "id": "L21_V022/121.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V022\\121.jpg",
+          "rank": 3,
+          "similarity": 0.29964035749435425,
+          "translated_query": null
+        },
+        {
+          "filename": "L22_V001/175.jpg",
+          "id": "L22_V001/175.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V001\\175.jpg",
+          "rank": 4,
+          "similarity": 0.2984420955181122,
+          "translated_query": null
+        },
+        {
+          "filename": "L22_V030/278.jpg",
+          "id": "L22_V030/278.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V030\\278.jpg",
+          "rank": 5,
+          "similarity": 0.29793310165405273,
+          "translated_query": null
+        }
+      ],
+      "expected_keywords": [
+        "motorcycle",
+        "bike"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "bicycle",
+      "description": "Tìm xe đạp",
+      "search_time": 2.075986623764038,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "top_results": [
+        {
+          "filename": "L23_V003/025.jpg",
+          "id": "L23_V003/025.jpg",
+          "path": "static\\images\\Keyframes_L23\\keyframes\\L23_V003\\025.jpg",
+          "rank": 1,
+          "similarity": 0.29177337884902954,
+          "translated_query": null
+        },
+        {
+          "filename": "L23_V007/041.jpg",
+          "id": "L23_V007/041.jpg",
+          "path": "static\\images\\Keyframes_L23\\keyframes\\L23_V007\\041.jpg",
+          "rank": 2,
+          "similarity": 0.29090020060539246,
+          "translated_query": null
+        },
+        {
+          "filename": "L23_V019/086.jpg",
+          "id": "L23_V019/086.jpg",
+          "path": "static\\images\\Keyframes_L23\\keyframes\\L23_V019\\086.jpg",
+          "rank": 3,
+          "similarity": 0.2904013991355896,
+          "translated_query": null
+        },
+        {
+          "filename": "L23_V007/068.jpg",
+          "id": "L23_V007/068.jpg",
+          "path": "static\\images\\Keyframes_L23\\keyframes\\L23_V007\\068.jpg",
+          "rank": 4,
+          "similarity": 0.29005515575408936,
+          "translated_query": null
+        },
+        {
+          "filename": "L22_V011/239.jpg",
+          "id": "L22_V011/239.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V011\\239.jpg",
+          "rank": 5,
+          "similarity": 0.2889198064804077,
+          "translated_query": null
+        }
+      ],
+      "expected_keywords": [
+        "bicycle",
+        "bike"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "truck",
+      "description": "Tìm xe tải",
+      "search_time": 2.0804319381713867,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "top_results": [
+        {
+          "filename": "L22_V030/275.jpg",
+          "id": "L22_V030/275.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V030\\275.jpg",
+          "rank": 1,
+          "similarity": 0.30065909028053284,
+          "translated_query": null
+        },
+        {
+          "filename": "L22_V014/248.jpg",
+          "id": "L22_V014/248.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V014\\248.jpg",
+          "rank": 2,
+          "similarity": 0.2932513654232025,
+          "translated_query": null
+        },
+        {
+          "filename": "L22_V030/274.jpg",
+          "id": "L22_V030/274.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V030\\274.jpg",
+          "rank": 3,
+          "similarity": 0.2919895052909851,
+          "translated_query": null
+        },
+        {
+          "filename": "L21_V001/300.jpg",
+          "id": "L21_V001/300.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V001\\300.jpg",
+          "rank": 4,
+          "similarity": 0.29165059328079224,
+          "translated_query": null
+        },
+        {
+          "filename": "L22_V025/263.jpg",
+          "id": "L22_V025/263.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V025\\263.jpg",
+          "rank": 5,
+          "similarity": 0.2910603880882263,
+          "translated_query": null
+        }
+      ],
+      "expected_keywords": [
+        "truck",
+        "vehicle"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "person",
+      "description": "Tìm người",
+      "search_time": 2.089858055114746,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "top_results": [
+        {
+          "filename": "L21_V011/152.jpg",
+          "id": "L21_V011/152.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V011\\152.jpg",
+          "rank": 1,
+          "similarity": 0.26455116271972656,
+          "translated_query": null
+        },
+        {
+          "filename": "L21_V011/151.jpg",
+          "id": "L21_V011/151.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V011\\151.jpg",
+          "rank": 2,
+          "similarity": 0.2643803656101227,
+          "translated_query": null
+        },
+        {
+          "filename": "L21_V011/154.jpg",
+          "id": "L21_V011/154.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V011\\154.jpg",
+          "rank": 3,
+          "similarity": 0.2635645568370819,
+          "translated_query": null
+        },
+        {
+          "filename": "L24_V038/147.jpg",
+          "id": "L24_V038/147.jpg",
+          "path": "static\\images\\Keyframes_L24\\keyframes\\L24_V038\\147.jpg",
+          "rank": 4,
+          "similarity": 0.2621299624443054,
+          "translated_query": null
+        },
+        {
+          "filename": "L22_V012/190.jpg",
+          "id": "L22_V012/190.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V012\\190.jpg",
+          "rank": 5,
+          "similarity": 0.2620518207550049,
+          "translated_query": null
+        }
+      ],
+      "expected_keywords": [
+        "person",
+        "people"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "người",
+      "description": "Tìm người bằng tiếng Việt",
+      "search_time": 2.103257179260254,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "top_results": [
+        {
+          "filename": "L21_V011/152.jpg",
+          "id": "L21_V011/152.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V011\\152.jpg",
+          "rank": 1,
+          "similarity": 0.26455116271972656,
+          "translated_query": "person"
+        },
+        {
+          "filename": "L21_V011/151.jpg",
+          "id": "L21_V011/151.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V011\\151.jpg",
+          "rank": 2,
+          "similarity": 0.2643803656101227,
+          "translated_query": "person"
+        },
+        {
+          "filename": "L21_V011/154.jpg",
+          "id": "L21_V011/154.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V011\\154.jpg",
+          "rank": 3,
+          "similarity": 0.2635645568370819,
+          "translated_query": "person"
+        },
+        {
+          "filename": "L24_V038/147.jpg",
+          "id": "L24_V038/147.jpg",
+          "path": "static\\images\\Keyframes_L24\\keyframes\\L24_V038\\147.jpg",
+          "rank": 4,
+          "similarity": 0.2621299624443054,
+          "translated_query": "person"
+        },
+        {
+          "filename": "L22_V012/190.jpg",
+          "id": "L22_V012/190.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V012\\190.jpg",
+          "rank": 5,
+          "similarity": 0.2620518207550049,
+          "translated_query": "person"
+        }
+      ],
+      "expected_keywords": [
+        "person",
+        "people"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "man",
+      "description": "Tìm đàn ông",
+      "search_time": 2.088038444519043,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "top_results": [
+        {
+          "filename": "L29_V009/149.jpg",
+          "id": "L29_V009/149.jpg",
+          "path": "static\\images\\Keyframes_L29\\keyframes\\L29_V009\\149.jpg",
+          "rank": 1,
+          "similarity": 0.2756825089454651,
+          "translated_query": null
+        },
+        {
+          "filename": "L21_V025/106.jpg",
+          "id": "L21_V025/106.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V025\\106.jpg",
+          "rank": 2,
+          "similarity": 0.2724442481994629,
+          "translated_query": null
+        },
+        {
+          "filename": "L21_V015/131.jpg",
+          "id": "L21_V015/131.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V015\\131.jpg",
+          "rank": 3,
+          "similarity": 0.27221688628196716,
+          "translated_query": null
+        },
+        {
+          "filename": "L21_V025/144.jpg",
+          "id": "L21_V025/144.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V025\\144.jpg",
+          "rank": 4,
+          "similarity": 0.27153968811035156,
+          "translated_query": null
+        },
+        {
+          "filename": "L22_V028/252.jpg",
+          "id": "L22_V028/252.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V028\\252.jpg",
+          "rank": 5,
+          "similarity": 0.27131885290145874,
+          "translated_query": null
+        }
+      ],
+      "expected_keywords": [
+        "man",
+        "person"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "woman",
+      "description": "Tìm phụ nữ",
+      "search_time": 2.0860965251922607,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "top_results": [
+        {
+          "filename": "L29_V001/348.jpg",
+          "id": "L29_V001/348.jpg",
+          "path": "static\\images\\Keyframes_L29\\keyframes\\L29_V001\\348.jpg",
+          "rank": 1,
+          "similarity": 0.26404333114624023,
+          "translated_query": null
+        },
+        {
+          "filename": "L21_V011/187.jpg",
+          "id": "L21_V011/187.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V011\\187.jpg",
+          "rank": 2,
+          "similarity": 0.2616111636161804,
+          "translated_query": null
+        },
+        {
+          "filename": "L22_V016/250.jpg",
+          "id": "L22_V016/250.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V016\\250.jpg",
+          "rank": 3,
+          "similarity": 0.26119375228881836,
+          "translated_query": null
+        },
+        {
+          "filename": "L29_V017/369.jpg",
+          "id": "L29_V017/369.jpg",
+          "path": "static\\images\\Keyframes_L29\\keyframes\\L29_V017\\369.jpg",
+          "rank": 4,
+          "similarity": 0.259956419467926,
+          "translated_query": null
+        },
+        {
+          "filename": "L21_V027/220.jpg",
+          "id": "L21_V027/220.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V027\\220.jpg",
+          "rank": 5,
+          "similarity": 0.25906461477279663,
+          "translated_query": null
+        }
+      ],
+      "expected_keywords": [
+        "woman",
+        "person"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "child",
+      "description": "Tìm trẻ em",
+      "search_time": 2.0704846382141113,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "top_results": [
+        {
+          "filename": "L21_V021/127.jpg",
+          "id": "L21_V021/127.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V021\\127.jpg",
+          "rank": 1,
+          "similarity": 0.280518501996994,
+          "translated_query": null
+        },
+        {
+          "filename": "L21_V021/118.jpg",
+          "id": "L21_V021/118.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V021\\118.jpg",
+          "rank": 2,
+          "similarity": 0.27663755416870117,
+          "translated_query": null
+        },
+        {
+          "filename": "L21_V021/125.jpg",
+          "id": "L21_V021/125.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V021\\125.jpg",
+          "rank": 3,
+          "similarity": 0.273607075214386,
+          "translated_query": null
+        },
+        {
+          "filename": "L21_V012/183.jpg",
+          "id": "L21_V012/183.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V012\\183.jpg",
+          "rank": 4,
+          "similarity": 0.2728704810142517,
+          "translated_query": null
+        },
+        {
+          "filename": "L21_V030/245.jpg",
+          "id": "L21_V030/245.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V030\\245.jpg",
+          "rank": 5,
+          "similarity": 0.27186447381973267,
+          "translated_query": null
+        }
+      ],
+      "expected_keywords": [
+        "child",
+        "kid"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "tree",
+      "description": "Tìm cây",
+      "search_time": 2.0909440517425537,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "top_results": [
+        {
+          "filename": "L27_V005/139.jpg",
+          "id": "L27_V005/139.jpg",
+          "path": "static\\images\\Keyframes_L27\\keyframes\\L27_V005\\139.jpg",
+          "rank": 1,
+          "similarity": 0.2968003749847412,
+          "translated_query": null
+        },
+        {
+          "filename": "L27_V007/219.jpg",
+          "id": "L27_V007/219.jpg",
+          "path": "static\\images\\Keyframes_L27\\keyframes\\L27_V007\\219.jpg",
+          "rank": 2,
+          "similarity": 0.29637065529823303,
+          "translated_query": null
+        },
+        {
+          "filename": "L29_V023/322.jpg",
+          "id": "L29_V023/322.jpg",
+          "path": "static\\images\\Keyframes_L29\\keyframes\\L29_V023\\322.jpg",
+          "rank": 3,
+          "similarity": 0.290657103061676,
+          "translated_query": null
+        },
+        {
+          "filename": "L27_V007/170.jpg",
+          "id": "L27_V007/170.jpg",
+          "path": "static\\images\\Keyframes_L27\\keyframes\\L27_V007\\170.jpg",
+          "rank": 4,
+          "similarity": 0.289529949426651,
+          "translated_query": null
+        },
+        {
+          "filename": "L27_V007/218.jpg",
+          "id": "L27_V007/218.jpg",
+          "path": "static\\images\\Keyframes_L27\\keyframes\\L27_V007\\218.jpg",
+          "rank": 5,
+          "similarity": 0.2893170416355133,
+          "translated_query": null
+        }
+      ],
+      "expected_keywords": [
+        "tree",
+        "nature"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "cây",
+      "description": "Tìm cây bằng tiếng Việt",
+      "search_time": 2.085155487060547,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "top_results": [
+        {
+          "filename": "L27_V005/139.jpg",
+          "id": "L27_V005/139.jpg",
+          "path": "static\\images\\Keyframes_L27\\keyframes\\L27_V005\\139.jpg",
+          "rank": 1,
+          "similarity": 0.2968003749847412,
+          "translated_query": "tree"
+        },
+        {
+          "filename": "L27_V007/219.jpg",
+          "id": "L27_V007/219.jpg",
+          "path": "static\\images\\Keyframes_L27\\keyframes\\L27_V007\\219.jpg",
+          "rank": 2,
+          "similarity": 0.29637065529823303,
+          "translated_query": "tree"
+        },
+        {
+          "filename": "L29_V023/322.jpg",
+          "id": "L29_V023/322.jpg",
+          "path": "static\\images\\Keyframes_L29\\keyframes\\L29_V023\\322.jpg",
+          "rank": 3,
+          "similarity": 0.290657103061676,
+          "translated_query": "tree"
+        },
+        {
+          "filename": "L27_V007/170.jpg",
+          "id": "L27_V007/170.jpg",
+          "path": "static\\images\\Keyframes_L27\\keyframes\\L27_V007\\170.jpg",
+          "rank": 4,
+          "similarity": 0.289529949426651,
+          "translated_query": "tree"
+        },
+        {
+          "filename": "L27_V007/218.jpg",
+          "id": "L27_V007/218.jpg",
+          "path": "static\\images\\Keyframes_L27\\keyframes\\L27_V007\\218.jpg",
+          "rank": 5,
+          "similarity": 0.2893170416355133,
+          "translated_query": "tree"
+        }
+      ],
+      "expected_keywords": [
+        "tree",
+        "nature"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "flower",
+      "description": "Tìm hoa",
+      "search_time": 2.061136484146118,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "top_results": [
+        {
+          "filename": "L29_V009/275.jpg",
+          "id": "L29_V009/275.jpg",
+          "path": "static\\images\\Keyframes_L29\\keyframes\\L29_V009\\275.jpg",
+          "rank": 1,
+          "similarity": 0.2828466594219208,
+          "translated_query": null
+        },
+        {
+          "filename": "L27_V016/364.jpg",
+          "id": "L27_V016/364.jpg",
+          "path": "static\\images\\Keyframes_L27\\keyframes\\L27_V016\\364.jpg",
+          "rank": 2,
+          "similarity": 0.27850526571273804,
+          "translated_query": null
+        },
+        {
+          "filename": "L29_V009/276.jpg",
+          "id": "L29_V009/276.jpg",
+          "path": "static\\images\\Keyframes_L29\\keyframes\\L29_V009\\276.jpg",
+          "rank": 3,
+          "similarity": 0.278415709733963,
+          "translated_query": null
+        },
+        {
+          "filename": "L29_V023/436.jpg",
+          "id": "L29_V023/436.jpg",
+          "path": "static\\images\\Keyframes_L29\\keyframes\\L29_V023\\436.jpg",
+          "rank": 4,
+          "similarity": 0.2770656645298004,
+          "translated_query": null
+        },
+        {
+          "filename": "L29_V004/192.jpg",
+          "id": "L29_V004/192.jpg",
+          "path": "static\\images\\Keyframes_L29\\keyframes\\L29_V004\\192.jpg",
+          "rank": 5,
+          "similarity": 0.276649534702301,
+          "translated_query": null
+        }
+      ],
+      "expected_keywords": [
+        "flower",
+        "nature"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "mountain",
+      "description": "Tìm núi",
+      "search_time": 2.0886189937591553,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "top_results": [
+        {
+          "filename": "L27_V008/087.jpg",
+          "id": "L27_V008/087.jpg",
+          "path": "static\\images\\Keyframes_L27\\keyframes\\L27_V008\\087.jpg",
+          "rank": 1,
+          "similarity": 0.27924132347106934,
+          "translated_query": null
+        },
+        {
+          "filename": "L27_V004/044.jpg",
+          "id": "L27_V004/044.jpg",
+          "path": "static\\images\\Keyframes_L27\\keyframes\\L27_V004\\044.jpg",
+          "rank": 2,
+          "similarity": 0.27848291397094727,
+          "translated_query": null
+        },
+        {
+          "filename": "L21_V017/007.jpg",
+          "id": "L21_V017/007.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V017\\007.jpg",
+          "rank": 3,
+          "similarity": 0.2761927843093872,
+          "translated_query": null
+        },
+        {
+          "filename": "L27_V007/218.jpg",
+          "id": "L27_V007/218.jpg",
+          "path": "static\\images\\Keyframes_L27\\keyframes\\L27_V007\\218.jpg",
+          "rank": 4,
+          "similarity": 0.2749549448490143,
+          "translated_query": null
+        },
+        {
+          "filename": "L27_V001/147.jpg",
+          "id": "L27_V001/147.jpg",
+          "path": "static\\images\\Keyframes_L27\\keyframes\\L27_V001\\147.jpg",
+          "rank": 5,
+          "similarity": 0.2739294171333313,
+          "translated_query": null
+        }
+      ],
+      "expected_keywords": [
+        "mountain",
+        "nature"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "water",
+      "description": "Tìm nước/sông/hồ",
+      "search_time": 2.065357208251953,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "top_results": [
+        {
+          "filename": "L26_V466/050.jpg",
+          "id": "L26_V466/050.jpg",
+          "path": "static\\images\\Keyframes_L26_e\\keyframes\\L26_V466\\050.jpg",
+          "rank": 1,
+          "similarity": 0.3002951145172119,
+          "translated_query": null
+        },
+        {
+          "filename": "L26_V355/134.jpg",
+          "id": "L26_V355/134.jpg",
+          "path": "static\\images\\Keyframes_L26_d\\keyframes\\L26_V355\\134.jpg",
+          "rank": 2,
+          "similarity": 0.29872456192970276,
+          "translated_query": null
+        },
+        {
+          "filename": "L21_V002/184.jpg",
+          "id": "L21_V002/184.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V002\\184.jpg",
+          "rank": 3,
+          "similarity": 0.29704487323760986,
+          "translated_query": null
+        },
+        {
+          "filename": "L26_V169/043.jpg",
+          "id": "L26_V169/043.jpg",
+          "path": "static\\images\\Keyframes_L26_b\\keyframes\\L26_V169\\043.jpg",
+          "rank": 4,
+          "similarity": 0.29443058371543884,
+          "translated_query": null
+        },
+        {
+          "filename": "L26_V351/122.jpg",
+          "id": "L26_V351/122.jpg",
+          "path": "static\\images\\Keyframes_L26_d\\keyframes\\L26_V351\\122.jpg",
+          "rank": 5,
+          "similarity": 0.2933480441570282,
+          "translated_query": null
+        }
+      ],
+      "expected_keywords": [
+        "water",
+        "river",
+        "lake"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "building",
+      "description": "Tìm tòa nhà",
+      "search_time": 2.0639519691467285,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "top_results": [
+        {
+          "filename": "L22_V029/016.jpg",
+          "id": "L22_V029/016.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V029\\016.jpg",
+          "rank": 1,
+          "similarity": 0.28660738468170166,
+          "translated_query": null
+        },
+        {
+          "filename": "L22_V006/064.jpg",
+          "id": "L22_V006/064.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V006\\064.jpg",
+          "rank": 2,
+          "similarity": 0.2786514163017273,
+          "translated_query": null
+        },
+        {
+          "filename": "L22_V002/290.jpg",
+          "id": "L22_V002/290.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V002\\290.jpg",
+          "rank": 3,
+          "similarity": 0.2738025486469269,
+          "translated_query": null
+        },
+        {
+          "filename": "L21_V022/006.jpg",
+          "id": "L21_V022/006.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V022\\006.jpg",
+          "rank": 4,
+          "similarity": 0.2724262773990631,
+          "translated_query": null
+        },
+        {
+          "filename": "L22_V006/065.jpg",
+          "id": "L22_V006/065.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V006\\065.jpg",
+          "rank": 5,
+          "similarity": 0.27090150117874146,
+          "translated_query": null
+        }
+      ],
+      "expected_keywords": [
+        "building",
+        "house"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "nhà",
+      "description": "Tìm nhà bằng tiếng Việt",
+      "search_time": 2.068439245223999,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "top_results": [
+        {
+          "filename": "L21_V022/006.jpg",
+          "id": "L21_V022/006.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V022\\006.jpg",
+          "rank": 1,
+          "similarity": 0.2725898027420044,
+          "translated_query": "house"
+        },
+        {
+          "filename": "L27_V015/105.jpg",
+          "id": "L27_V015/105.jpg",
+          "path": "static\\images\\Keyframes_L27\\keyframes\\L27_V015\\105.jpg",
+          "rank": 2,
+          "similarity": 0.2684171497821808,
+          "translated_query": "house"
+        },
+        {
+          "filename": "L27_V007/052.jpg",
+          "id": "L27_V007/052.jpg",
+          "path": "static\\images\\Keyframes_L27\\keyframes\\L27_V007\\052.jpg",
+          "rank": 3,
+          "similarity": 0.2683390974998474,
+          "translated_query": "house"
+        },
+        {
+          "filename": "L21_V022/035.jpg",
+          "id": "L21_V022/035.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V022\\035.jpg",
+          "rank": 4,
+          "similarity": 0.2647906541824341,
+          "translated_query": "house"
+        },
+        {
+          "filename": "L29_V002/121.jpg",
+          "id": "L29_V002/121.jpg",
+          "path": "static\\images\\Keyframes_L29\\keyframes\\L29_V002\\121.jpg",
+          "rank": 5,
+          "similarity": 0.26364579796791077,
+          "translated_query": "house"
+        }
+      ],
+      "expected_keywords": [
+        "house",
+        "building"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "house",
+      "description": "Tìm nhà",
+      "search_time": 2.1022305488586426,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "top_results": [
+        {
+          "filename": "L21_V022/006.jpg",
+          "id": "L21_V022/006.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V022\\006.jpg",
+          "rank": 1,
+          "similarity": 0.2725898027420044,
+          "translated_query": null
+        },
+        {
+          "filename": "L27_V015/105.jpg",
+          "id": "L27_V015/105.jpg",
+          "path": "static\\images\\Keyframes_L27\\keyframes\\L27_V015\\105.jpg",
+          "rank": 2,
+          "similarity": 0.2684171497821808,
+          "translated_query": null
+        },
+        {
+          "filename": "L27_V007/052.jpg",
+          "id": "L27_V007/052.jpg",
+          "path": "static\\images\\Keyframes_L27\\keyframes\\L27_V007\\052.jpg",
+          "rank": 3,
+          "similarity": 0.2683390974998474,
+          "translated_query": null
+        },
+        {
+          "filename": "L21_V022/035.jpg",
+          "id": "L21_V022/035.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V022\\035.jpg",
+          "rank": 4,
+          "similarity": 0.2647906541824341,
+          "translated_query": null
+        },
+        {
+          "filename": "L29_V002/121.jpg",
+          "id": "L29_V002/121.jpg",
+          "path": "static\\images\\Keyframes_L29\\keyframes\\L29_V002\\121.jpg",
+          "rank": 5,
+          "similarity": 0.26364579796791077,
+          "translated_query": null
+        }
+      ],
+      "expected_keywords": [
+        "house",
+        "building"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "bridge",
+      "description": "Tìm cầu",
+      "search_time": 2.086707592010498,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "top_results": [
+        {
+          "filename": "L23_V011/046.jpg",
+          "id": "L23_V011/046.jpg",
+          "path": "static\\images\\Keyframes_L23\\keyframes\\L23_V011\\046.jpg",
+          "rank": 1,
+          "similarity": 0.29801416397094727,
+          "translated_query": null
+        },
+        {
+          "filename": "L27_V014/095.jpg",
+          "id": "L27_V014/095.jpg",
+          "path": "static\\images\\Keyframes_L27\\keyframes\\L27_V014\\095.jpg",
+          "rank": 2,
+          "similarity": 0.2932544946670532,
+          "translated_query": null
+        },
+        {
+          "filename": "L29_V008/424.jpg",
+          "id": "L29_V008/424.jpg",
+          "path": "static\\images\\Keyframes_L29\\keyframes\\L29_V008\\424.jpg",
+          "rank": 3,
+          "similarity": 0.29202449321746826,
+          "translated_query": null
+        },
+        {
+          "filename": "L27_V015/156.jpg",
+          "id": "L27_V015/156.jpg",
+          "path": "static\\images\\Keyframes_L27\\keyframes\\L27_V015\\156.jpg",
+          "rank": 4,
+          "similarity": 0.28937649726867676,
+          "translated_query": null
+        },
+        {
+          "filename": "L23_V011/015.jpg",
+          "id": "L23_V011/015.jpg",
+          "path": "static\\images\\Keyframes_L23\\keyframes\\L23_V011\\015.jpg",
+          "rank": 5,
+          "similarity": 0.2875377833843231,
+          "translated_query": null
+        }
+      ],
+      "expected_keywords": [
+        "bridge"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "person riding motorcycle",
+      "description": "Người đi xe máy",
+      "search_time": 2.078429937362671,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "top_results": [
+        {
+          "filename": "L21_V018/164.jpg",
+          "id": "L21_V018/164.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V018\\164.jpg",
+          "rank": 1,
+          "similarity": 0.33860301971435547,
+          "translated_query": null
+        },
+        {
+          "filename": "L22_V008/249.jpg",
+          "id": "L22_V008/249.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V008\\249.jpg",
+          "rank": 2,
+          "similarity": 0.3324325978755951,
+          "translated_query": null
+        },
+        {
+          "filename": "L21_V002/110.jpg",
+          "id": "L21_V002/110.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V002\\110.jpg",
+          "rank": 3,
+          "similarity": 0.3313558101654053,
+          "translated_query": null
+        },
+        {
+          "filename": "L21_V021/050.jpg",
+          "id": "L21_V021/050.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V021\\050.jpg",
+          "rank": 4,
+          "similarity": 0.33032160997390747,
+          "translated_query": null
+        },
+        {
+          "filename": "L22_V024/203.jpg",
+          "id": "L22_V024/203.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V024\\203.jpg",
+          "rank": 5,
+          "similarity": 0.3281942903995514,
+          "translated_query": null
+        }
+      ],
+      "expected_keywords": [
+        "person",
+        "motorcycle"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "car on road",
+      "description": "Xe hơi trên đường",
+      "search_time": 2.076700210571289,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "top_results": [
+        {
+          "filename": "L21_V002/129.jpg",
+          "id": "L21_V002/129.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V002\\129.jpg",
+          "rank": 1,
+          "similarity": 0.32990801334381104,
+          "translated_query": null
+        },
+        {
+          "filename": "L22_V004/252.jpg",
+          "id": "L22_V004/252.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V004\\252.jpg",
+          "rank": 2,
+          "similarity": 0.32597869634628296,
+          "translated_query": null
+        },
+        {
+          "filename": "L22_V003/272.jpg",
+          "id": "L22_V003/272.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V003\\272.jpg",
+          "rank": 3,
+          "similarity": 0.3225625157356262,
+          "translated_query": null
+        },
+        {
+          "filename": "L22_V020/061.jpg",
+          "id": "L22_V020/061.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V020\\061.jpg",
+          "rank": 4,
+          "similarity": 0.3199654519557953,
+          "translated_query": null
+        },
+        {
+          "filename": "L22_V003/242.jpg",
+          "id": "L22_V003/242.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V003\\242.jpg",
+          "rank": 5,
+          "similarity": 0.3199199438095093,
+          "translated_query": null
+        }
+      ],
+      "expected_keywords": [
+        "car",
+        "road"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "animal in nature",
+      "description": "Động vật trong thiên nhiên",
+      "search_time": 2.081674098968506,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "top_results": [
+        {
+          "filename": "L21_V029/171.jpg",
+          "id": "L21_V029/171.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V029\\171.jpg",
+          "rank": 1,
+          "similarity": 0.2891685962677002,
+          "translated_query": null
+        },
+        {
+          "filename": "L21_V003/240.jpg",
+          "id": "L21_V003/240.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V003\\240.jpg",
+          "rank": 2,
+          "similarity": 0.287631094455719,
+          "translated_query": null
+        },
+        {
+          "filename": "L21_V015/224.jpg",
+          "id": "L21_V015/224.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V015\\224.jpg",
+          "rank": 3,
+          "similarity": 0.2865501344203949,
+          "translated_query": null
+        },
+        {
+          "filename": "L29_V004/382.jpg",
+          "id": "L29_V004/382.jpg",
+          "path": "static\\images\\Keyframes_L29\\keyframes\\L29_V004\\382.jpg",
+          "rank": 4,
+          "similarity": 0.28471606969833374,
+          "translated_query": null
+        },
+        {
+          "filename": "L21_V017/067.jpg",
+          "id": "L21_V017/067.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V017\\067.jpg",
+          "rank": 5,
+          "similarity": 0.2846212685108185,
+          "translated_query": null
+        }
+      ],
+      "expected_keywords": [
+        "animal",
+        "nature"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "building with people",
+      "description": "Tòa nhà có người",
+      "search_time": 2.069715976715088,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "top_results": [
+        {
+          "filename": "L22_V029/016.jpg",
+          "id": "L22_V029/016.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V029\\016.jpg",
+          "rank": 1,
+          "similarity": 0.3019464910030365,
+          "translated_query": null
+        },
+        {
+          "filename": "L29_V019/555.jpg",
+          "id": "L29_V019/555.jpg",
+          "path": "static\\images\\Keyframes_L29\\keyframes\\L29_V019\\555.jpg",
+          "rank": 2,
+          "similarity": 0.2911868989467621,
+          "translated_query": null
+        },
+        {
+          "filename": "L22_V006/078.jpg",
+          "id": "L22_V006/078.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V006\\078.jpg",
+          "rank": 3,
+          "similarity": 0.28957828879356384,
+          "translated_query": null
+        },
+        {
+          "filename": "L22_V002/290.jpg",
+          "id": "L22_V002/290.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V002\\290.jpg",
+          "rank": 4,
+          "similarity": 0.2881965935230255,
+          "translated_query": null
+        },
+        {
+          "filename": "L22_V006/085.jpg",
+          "id": "L22_V006/085.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V006\\085.jpg",
+          "rank": 5,
+          "similarity": 0.28615546226501465,
+          "translated_query": null
+        }
+      ],
+      "expected_keywords": [
+        "building",
+        "person"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "phone",
+      "description": "Tìm điện thoại",
+      "search_time": 2.0789661407470703,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "top_results": [
+        {
+          "filename": "L24_V009/157.jpg",
+          "id": "L24_V009/157.jpg",
+          "path": "static\\images\\Keyframes_L24\\keyframes\\L24_V009\\157.jpg",
+          "rank": 1,
+          "similarity": 0.28575319051742554,
+          "translated_query": null
+        },
+        {
+          "filename": "L24_V032/211.jpg",
+          "id": "L24_V032/211.jpg",
+          "path": "static\\images\\Keyframes_L24\\keyframes\\L24_V032\\211.jpg",
+          "rank": 2,
+          "similarity": 0.2783982753753662,
+          "translated_query": null
+        },
+        {
+          "filename": "L21_V011/076.jpg",
+          "id": "L21_V011/076.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V011\\076.jpg",
+          "rank": 3,
+          "similarity": 0.2724616527557373,
+          "translated_query": null
+        },
+        {
+          "filename": "L21_V001/129.jpg",
+          "id": "L21_V001/129.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V001\\129.jpg",
+          "rank": 4,
+          "similarity": 0.269343763589859,
+          "translated_query": null
+        },
+        {
+          "filename": "L26_V436/091.jpg",
+          "id": "L26_V436/091.jpg",
+          "path": "static\\images\\Keyframes_L26_e\\keyframes\\L26_V436\\091.jpg",
+          "rank": 5,
+          "similarity": 0.2661304175853729,
+          "translated_query": null
+        }
+      ],
+      "expected_keywords": [
+        "phone",
+        "mobile"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "computer",
+      "description": "Tìm máy tính",
+      "search_time": 2.0864157676696777,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "top_results": [
+        {
+          "filename": "L21_V022/068.jpg",
+          "id": "L21_V022/068.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V022\\068.jpg",
+          "rank": 1,
+          "similarity": 0.2908771336078644,
+          "translated_query": null
+        },
+        {
+          "filename": "L22_V014/191.jpg",
+          "id": "L22_V014/191.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V014\\191.jpg",
+          "rank": 2,
+          "similarity": 0.2907264828681946,
+          "translated_query": null
+        },
+        {
+          "filename": "L22_V012/198.jpg",
+          "id": "L22_V012/198.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V012\\198.jpg",
+          "rank": 3,
+          "similarity": 0.2889774739742279,
+          "translated_query": null
+        },
+        {
+          "filename": "L25_V074/037.jpg",
+          "id": "L25_V074/037.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V074\\037.jpg",
+          "rank": 4,
+          "similarity": 0.28774896264076233,
+          "translated_query": null
+        },
+        {
+          "filename": "L22_V025/050.jpg",
+          "id": "L22_V025/050.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V025\\050.jpg",
+          "rank": 5,
+          "similarity": 0.2856708765029907,
+          "translated_query": null
+        }
+      ],
+      "expected_keywords": [
+        "computer",
+        "laptop"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "book",
+      "description": "Tìm sách",
+      "search_time": 2.0943706035614014,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "top_results": [
+        {
+          "filename": "L25_V087/370.jpg",
+          "id": "L25_V087/370.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V087\\370.jpg",
+          "rank": 1,
+          "similarity": 0.278448224067688,
+          "translated_query": null
+        },
+        {
+          "filename": "L25_V067/366.jpg",
+          "id": "L25_V067/366.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V067\\366.jpg",
+          "rank": 2,
+          "similarity": 0.2770858108997345,
+          "translated_query": null
+        },
+        {
+          "filename": "L25_V054/020.jpg",
+          "id": "L25_V054/020.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V054\\020.jpg",
+          "rank": 3,
+          "similarity": 0.2760445177555084,
+          "translated_query": null
+        },
+        {
+          "filename": "L25_V011/236.jpg",
+          "id": "L25_V011/236.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V011\\236.jpg",
+          "rank": 4,
+          "similarity": 0.2759132981300354,
+          "translated_query": null
+        },
+        {
+          "filename": "L25_V017/263.jpg",
+          "id": "L25_V017/263.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V017\\263.jpg",
+          "rank": 5,
+          "similarity": 0.27536699175834656,
+          "translated_query": null
+        }
+      ],
+      "expected_keywords": [
+        "book"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "chair",
+      "description": "Tìm ghế",
+      "search_time": 2.0837926864624023,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "top_results": [
+        {
+          "filename": "L29_V014/322.jpg",
+          "id": "L29_V014/322.jpg",
+          "path": "static\\images\\Keyframes_L29\\keyframes\\L29_V014\\322.jpg",
+          "rank": 1,
+          "similarity": 0.2816176414489746,
+          "translated_query": null
+        },
+        {
+          "filename": "L27_V005/120.jpg",
+          "id": "L27_V005/120.jpg",
+          "path": "static\\images\\Keyframes_L27\\keyframes\\L27_V005\\120.jpg",
+          "rank": 2,
+          "similarity": 0.276796817779541,
+          "translated_query": null
+        },
+        {
+          "filename": "L26_V488/017.jpg",
+          "id": "L26_V488/017.jpg",
+          "path": "static\\images\\Keyframes_L26_e\\keyframes\\L26_V488\\017.jpg",
+          "rank": 3,
+          "similarity": 0.27454933524131775,
+          "translated_query": null
+        },
+        {
+          "filename": "L26_V405/012.jpg",
+          "id": "L26_V405/012.jpg",
+          "path": "static\\images\\Keyframes_L26_e\\keyframes\\L26_V405\\012.jpg",
+          "rank": 4,
+          "similarity": 0.27449217438697815,
+          "translated_query": null
+        },
+        {
+          "filename": "L26_V494/107.jpg",
+          "id": "L26_V494/107.jpg",
+          "path": "static\\images\\Keyframes_L26_e\\keyframes\\L26_V494\\107.jpg",
+          "rank": 5,
+          "similarity": 0.27298349142074585,
+          "translated_query": null
+        }
+      ],
+      "expected_keywords": [
+        "chair",
+        "furniture"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "table",
+      "description": "Tìm bàn",
+      "search_time": 2.0965230464935303,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "top_results": [
+        {
+          "filename": "L21_V025/035.jpg",
+          "id": "L21_V025/035.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V025\\035.jpg",
+          "rank": 1,
+          "similarity": 0.29816824197769165,
+          "translated_query": null
+        },
+        {
+          "filename": "L21_V008/063.jpg",
+          "id": "L21_V008/063.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V008\\063.jpg",
+          "rank": 2,
+          "similarity": 0.2888905107975006,
+          "translated_query": null
+        },
+        {
+          "filename": "L21_V006/081.jpg",
+          "id": "L21_V006/081.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V006\\081.jpg",
+          "rank": 3,
+          "similarity": 0.2877920866012573,
+          "translated_query": null
+        },
+        {
+          "filename": "L26_V319/077.jpg",
+          "id": "L26_V319/077.jpg",
+          "path": "static\\images\\Keyframes_L26_d\\keyframes\\L26_V319\\077.jpg",
+          "rank": 4,
+          "similarity": 0.28480976819992065,
+          "translated_query": null
+        },
+        {
+          "filename": "L26_V405/012.jpg",
+          "id": "L26_V405/012.jpg",
+          "path": "static\\images\\Keyframes_L26_e\\keyframes\\L26_V405\\012.jpg",
+          "rank": 5,
+          "similarity": 0.2796039581298828,
+          "translated_query": null
+        }
+      ],
+      "expected_keywords": [
+        "table",
+        "furniture"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "red car",
+      "description": "Xe hơi màu đỏ",
+      "search_time": 2.094000816345215,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "top_results": [
+        {
+          "filename": "L22_V018/333.jpg",
+          "id": "L22_V018/333.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V018\\333.jpg",
+          "rank": 1,
+          "similarity": 0.2927834689617157,
+          "translated_query": null
+        },
+        {
+          "filename": "L22_V007/243.jpg",
+          "id": "L22_V007/243.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V007\\243.jpg",
+          "rank": 2,
+          "similarity": 0.28545069694519043,
+          "translated_query": null
+        },
+        {
+          "filename": "L22_V001/156.jpg",
+          "id": "L22_V001/156.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V001\\156.jpg",
+          "rank": 3,
+          "similarity": 0.28317129611968994,
+          "translated_query": null
+        },
+        {
+          "filename": "L22_V018/268.jpg",
+          "id": "L22_V018/268.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V018\\268.jpg",
+          "rank": 4,
+          "similarity": 0.28204816579818726,
+          "translated_query": null
+        },
+        {
+          "filename": "L22_V021/235.jpg",
+          "id": "L22_V021/235.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V021\\235.jpg",
+          "rank": 5,
+          "similarity": 0.28078943490982056,
+          "translated_query": null
+        }
+      ],
+      "expected_keywords": [
+        "car"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "blue sky",
+      "description": "Bầu trời xanh",
+      "search_time": 2.092996120452881,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "top_results": [
+        {
+          "filename": "L25_V088/165.jpg",
+          "id": "L25_V088/165.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V088\\165.jpg",
+          "rank": 1,
+          "similarity": 0.2901070713996887,
+          "translated_query": null
+        },
+        {
+          "filename": "L25_V020/181.jpg",
+          "id": "L25_V020/181.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V020\\181.jpg",
+          "rank": 2,
+          "similarity": 0.2883986532688141,
+          "translated_query": null
+        },
+        {
+          "filename": "L25_V050/215.jpg",
+          "id": "L25_V050/215.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V050\\215.jpg",
+          "rank": 3,
+          "similarity": 0.2876298129558563,
+          "translated_query": null
+        },
+        {
+          "filename": "L25_V007/262.jpg",
+          "id": "L25_V007/262.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V007\\262.jpg",
+          "rank": 4,
+          "similarity": 0.28707706928253174,
+          "translated_query": null
+        },
+        {
+          "filename": "L25_V011/138.jpg",
+          "id": "L25_V011/138.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V011\\138.jpg",
+          "rank": 5,
+          "similarity": 0.2869154214859009,
+          "translated_query": null
+        }
+      ],
+      "expected_keywords": [
+        "sky"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "green tree",
+      "description": "Cây xanh",
+      "search_time": 2.0801637172698975,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "top_results": [
+        {
+          "filename": "L21_V025/143.jpg",
+          "id": "L21_V025/143.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V025\\143.jpg",
+          "rank": 1,
+          "similarity": 0.2988496422767639,
+          "translated_query": null
+        },
+        {
+          "filename": "L29_V013/461.jpg",
+          "id": "L29_V013/461.jpg",
+          "path": "static\\images\\Keyframes_L29\\keyframes\\L29_V013\\461.jpg",
+          "rank": 2,
+          "similarity": 0.2911553680896759,
+          "translated_query": null
+        },
+        {
+          "filename": "L29_V004/246.jpg",
+          "id": "L29_V004/246.jpg",
+          "path": "static\\images\\Keyframes_L29\\keyframes\\L29_V004\\246.jpg",
+          "rank": 3,
+          "similarity": 0.28893059492111206,
+          "translated_query": null
+        },
+        {
+          "filename": "L27_V015/176.jpg",
+          "id": "L27_V015/176.jpg",
+          "path": "static\\images\\Keyframes_L27\\keyframes\\L27_V015\\176.jpg",
+          "rank": 4,
+          "similarity": 0.2888546288013458,
+          "translated_query": null
+        },
+        {
+          "filename": "L29_V013/462.jpg",
+          "id": "L29_V013/462.jpg",
+          "path": "static\\images\\Keyframes_L29\\keyframes\\L29_V013\\462.jpg",
+          "rank": 5,
+          "similarity": 0.28881534934043884,
+          "translated_query": null
+        }
+      ],
+      "expected_keywords": [
+        "tree"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "white building",
+      "description": "Tòa nhà trắng",
+      "search_time": 2.1043951511383057,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "top_results": [
+        {
+          "filename": "L22_V006/064.jpg",
+          "id": "L22_V006/064.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V006\\064.jpg",
+          "rank": 1,
+          "similarity": 0.28349727392196655,
+          "translated_query": null
+        },
+        {
+          "filename": "L21_V022/006.jpg",
+          "id": "L21_V022/006.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V022\\006.jpg",
+          "rank": 2,
+          "similarity": 0.2824398875236511,
+          "translated_query": null
+        },
+        {
+          "filename": "L22_V006/065.jpg",
+          "id": "L22_V006/065.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V006\\065.jpg",
+          "rank": 3,
+          "similarity": 0.27850666642189026,
+          "translated_query": null
+        },
+        {
+          "filename": "L21_V027/018.jpg",
+          "id": "L21_V027/018.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V027\\018.jpg",
+          "rank": 4,
+          "similarity": 0.27494102716445923,
+          "translated_query": null
+        },
+        {
+          "filename": "L22_V006/062.jpg",
+          "id": "L22_V006/062.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V006\\062.jpg",
+          "rank": 5,
+          "similarity": 0.27325254678726196,
+          "translated_query": null
+        }
+      ],
+      "expected_keywords": [
+        "building"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "running",
+      "description": "Chạy",
+      "search_time": 2.107708692550659,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "top_results": [
+        {
+          "filename": "L27_V005/052.jpg",
+          "id": "L27_V005/052.jpg",
+          "path": "static\\images\\Keyframes_L27\\keyframes\\L27_V005\\052.jpg",
+          "rank": 1,
+          "similarity": 0.2896386981010437,
+          "translated_query": null
+        },
+        {
+          "filename": "L23_V007/008.jpg",
+          "id": "L23_V007/008.jpg",
+          "path": "static\\images\\Keyframes_L23\\keyframes\\L23_V007\\008.jpg",
+          "rank": 2,
+          "similarity": 0.2874943017959595,
+          "translated_query": null
+        },
+        {
+          "filename": "L23_V021/082.jpg",
+          "id": "L23_V021/082.jpg",
+          "path": "static\\images\\Keyframes_L23\\keyframes\\L23_V021\\082.jpg",
+          "rank": 3,
+          "similarity": 0.28629133105278015,
+          "translated_query": null
+        },
+        {
+          "filename": "L27_V005/217.jpg",
+          "id": "L27_V005/217.jpg",
+          "path": "static\\images\\Keyframes_L27\\keyframes\\L27_V005\\217.jpg",
+          "rank": 4,
+          "similarity": 0.28194642066955566,
+          "translated_query": null
+        },
+        {
+          "filename": "L23_V019/086.jpg",
+          "id": "L23_V019/086.jpg",
+          "path": "static\\images\\Keyframes_L23\\keyframes\\L23_V019\\086.jpg",
+          "rank": 5,
+          "similarity": 0.2809585928916931,
+          "translated_query": null
+        }
+      ],
+      "expected_keywords": [
+        "person"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "walking",
+      "description": "Đi bộ",
+      "search_time": 2.075845241546631,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "top_results": [
+        {
+          "filename": "L21_V018/172.jpg",
+          "id": "L21_V018/172.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V018\\172.jpg",
+          "rank": 1,
+          "similarity": 0.2927492558956146,
+          "translated_query": null
+        },
+        {
+          "filename": "L22_V016/250.jpg",
+          "id": "L22_V016/250.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V016\\250.jpg",
+          "rank": 2,
+          "similarity": 0.29070624709129333,
+          "translated_query": null
+        },
+        {
+          "filename": "L27_V005/052.jpg",
+          "id": "L27_V005/052.jpg",
+          "path": "static\\images\\Keyframes_L27\\keyframes\\L27_V005\\052.jpg",
+          "rank": 3,
+          "similarity": 0.27890825271606445,
+          "translated_query": null
+        },
+        {
+          "filename": "L27_V003/202.jpg",
+          "id": "L27_V003/202.jpg",
+          "path": "static\\images\\Keyframes_L27\\keyframes\\L27_V003\\202.jpg",
+          "rank": 4,
+          "similarity": 0.2776011824607849,
+          "translated_query": null
+        },
+        {
+          "filename": "L27_V004/109.jpg",
+          "id": "L27_V004/109.jpg",
+          "path": "static\\images\\Keyframes_L27\\keyframes\\L27_V004\\109.jpg",
+          "rank": 5,
+          "similarity": 0.27693885564804077,
+          "translated_query": null
+        }
+      ],
+      "expected_keywords": [
+        "person"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "sitting",
+      "description": "Ngồi",
+      "search_time": 2.1034913063049316,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "top_results": [
+        {
+          "filename": "L26_V442/016.jpg",
+          "id": "L26_V442/016.jpg",
+          "path": "static\\images\\Keyframes_L26_e\\keyframes\\L26_V442\\016.jpg",
+          "rank": 1,
+          "similarity": 0.261410653591156,
+          "translated_query": null
+        },
+        {
+          "filename": "L29_V012/316.jpg",
+          "id": "L29_V012/316.jpg",
+          "path": "static\\images\\Keyframes_L29\\keyframes\\L29_V012\\316.jpg",
+          "rank": 2,
+          "similarity": 0.2587650418281555,
+          "translated_query": null
+        },
+        {
+          "filename": "L27_V005/120.jpg",
+          "id": "L27_V005/120.jpg",
+          "path": "static\\images\\Keyframes_L27\\keyframes\\L27_V005\\120.jpg",
+          "rank": 3,
+          "similarity": 0.25771772861480713,
+          "translated_query": null
+        },
+        {
+          "filename": "L26_V405/012.jpg",
+          "id": "L26_V405/012.jpg",
+          "path": "static\\images\\Keyframes_L26_e\\keyframes\\L26_V405\\012.jpg",
+          "rank": 4,
+          "similarity": 0.25590065121650696,
+          "translated_query": null
+        },
+        {
+          "filename": "L26_V413/015.jpg",
+          "id": "L26_V413/015.jpg",
+          "path": "static\\images\\Keyframes_L26_e\\keyframes\\L26_V413\\015.jpg",
+          "rank": 5,
+          "similarity": 0.25544923543930054,
+          "translated_query": null
+        }
+      ],
+      "expected_keywords": [
+        "person"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "standing",
+      "description": "Đứng",
+      "search_time": 2.083038806915283,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "top_results": [
+        {
+          "filename": "L27_V010/096.jpg",
+          "id": "L27_V010/096.jpg",
+          "path": "static\\images\\Keyframes_L27\\keyframes\\L27_V010\\096.jpg",
+          "rank": 1,
+          "similarity": 0.27176642417907715,
+          "translated_query": null
+        },
+        {
+          "filename": "L21_V017/140.jpg",
+          "id": "L21_V017/140.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V017\\140.jpg",
+          "rank": 2,
+          "similarity": 0.26885026693344116,
+          "translated_query": null
+        },
+        {
+          "filename": "L24_V045/011.jpg",
+          "id": "L24_V045/011.jpg",
+          "path": "static\\images\\Keyframes_L24\\keyframes\\L24_V045\\011.jpg",
+          "rank": 3,
+          "similarity": 0.2633183002471924,
+          "translated_query": null
+        },
+        {
+          "filename": "L29_V016/405.jpg",
+          "id": "L29_V016/405.jpg",
+          "path": "static\\images\\Keyframes_L29\\keyframes\\L29_V016\\405.jpg",
+          "rank": 4,
+          "similarity": 0.2604777216911316,
+          "translated_query": null
+        },
+        {
+          "filename": "L21_V014/009.jpg",
+          "id": "L21_V014/009.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V014\\009.jpg",
+          "rank": 5,
+          "similarity": 0.2597396969795227,
+          "translated_query": null
+        }
+      ],
+      "expected_keywords": [
+        "person"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "city street",
+      "description": "Đường phố thành phố",
+      "search_time": 2.0911574363708496,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "top_results": [
+        {
+          "filename": "L23_V019/041.jpg",
+          "id": "L23_V019/041.jpg",
+          "path": "static\\images\\Keyframes_L23\\keyframes\\L23_V019\\041.jpg",
+          "rank": 1,
+          "similarity": 0.2726626992225647,
+          "translated_query": null
+        },
+        {
+          "filename": "L23_V019/042.jpg",
+          "id": "L23_V019/042.jpg",
+          "path": "static\\images\\Keyframes_L23\\keyframes\\L23_V019\\042.jpg",
+          "rank": 2,
+          "similarity": 0.266510546207428,
+          "translated_query": null
+        },
+        {
+          "filename": "L22_V023/008.jpg",
+          "id": "L22_V023/008.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V023\\008.jpg",
+          "rank": 3,
+          "similarity": 0.2644469738006592,
+          "translated_query": null
+        },
+        {
+          "filename": "L23_V006/088.jpg",
+          "id": "L23_V006/088.jpg",
+          "path": "static\\images\\Keyframes_L23\\keyframes\\L23_V006\\088.jpg",
+          "rank": 4,
+          "similarity": 0.26205509901046753,
+          "translated_query": null
+        },
+        {
+          "filename": "L23_V019/043.jpg",
+          "id": "L23_V019/043.jpg",
+          "path": "static\\images\\Keyframes_L23\\keyframes\\L23_V019\\043.jpg",
+          "rank": 5,
+          "similarity": 0.2587844431400299,
+          "translated_query": null
+        }
+      ],
+      "expected_keywords": [
+        "street",
+        "city"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "rural area",
+      "description": "Khu vực nông thôn",
+      "search_time": 2.090799331665039,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "top_results": [
+        {
+          "filename": "L29_V011/151.jpg",
+          "id": "L29_V011/151.jpg",
+          "path": "static\\images\\Keyframes_L29\\keyframes\\L29_V011\\151.jpg",
+          "rank": 1,
+          "similarity": 0.2826327681541443,
+          "translated_query": null
+        },
+        {
+          "filename": "L29_V004/522.jpg",
+          "id": "L29_V004/522.jpg",
+          "path": "static\\images\\Keyframes_L29\\keyframes\\L29_V004\\522.jpg",
+          "rank": 2,
+          "similarity": 0.27867501974105835,
+          "translated_query": null
+        },
+        {
+          "filename": "L29_V011/192.jpg",
+          "id": "L29_V011/192.jpg",
+          "path": "static\\images\\Keyframes_L29\\keyframes\\L29_V011\\192.jpg",
+          "rank": 3,
+          "similarity": 0.27806025743484497,
+          "translated_query": null
+        },
+        {
+          "filename": "L29_V004/518.jpg",
+          "id": "L29_V004/518.jpg",
+          "path": "static\\images\\Keyframes_L29\\keyframes\\L29_V004\\518.jpg",
+          "rank": 4,
+          "similarity": 0.27502724528312683,
+          "translated_query": null
+        },
+        {
+          "filename": "L29_V016/146.jpg",
+          "id": "L29_V016/146.jpg",
+          "path": "static\\images\\Keyframes_L29\\keyframes\\L29_V016\\146.jpg",
+          "rank": 5,
+          "similarity": 0.2733485996723175,
+          "translated_query": null
+        }
+      ],
+      "expected_keywords": [
+        "rural",
+        "countryside"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "beach",
+      "description": "Bãi biển",
+      "search_time": 2.07563853263855,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "top_results": [
+        {
+          "filename": "L27_V008/259.jpg",
+          "id": "L27_V008/259.jpg",
+          "path": "static\\images\\Keyframes_L27\\keyframes\\L27_V008\\259.jpg",
+          "rank": 1,
+          "similarity": 0.2844650447368622,
+          "translated_query": null
+        },
+        {
+          "filename": "L27_V005/331.jpg",
+          "id": "L27_V005/331.jpg",
+          "path": "static\\images\\Keyframes_L27\\keyframes\\L27_V005\\331.jpg",
+          "rank": 2,
+          "similarity": 0.2762560248374939,
+          "translated_query": null
+        },
+        {
+          "filename": "L27_V005/330.jpg",
+          "id": "L27_V005/330.jpg",
+          "path": "static\\images\\Keyframes_L27\\keyframes\\L27_V005\\330.jpg",
+          "rank": 3,
+          "similarity": 0.2728813588619232,
+          "translated_query": null
+        },
+        {
+          "filename": "L27_V008/264.jpg",
+          "id": "L27_V008/264.jpg",
+          "path": "static\\images\\Keyframes_L27\\keyframes\\L27_V008\\264.jpg",
+          "rank": 4,
+          "similarity": 0.27009910345077515,
+          "translated_query": null
+        },
+        {
+          "filename": "L21_V008/085.jpg",
+          "id": "L21_V008/085.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V008\\085.jpg",
+          "rank": 5,
+          "similarity": 0.27005189657211304,
+          "translated_query": null
+        }
+      ],
+      "expected_keywords": [
+        "beach",
+        "sea"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "forest",
+      "description": "Rừng",
+      "search_time": 2.1006200313568115,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "top_results": [
+        {
+          "filename": "L29_V010/122.jpg",
+          "id": "L29_V010/122.jpg",
+          "path": "static\\images\\Keyframes_L29\\keyframes\\L29_V010\\122.jpg",
+          "rank": 1,
+          "similarity": 0.29596051573753357,
+          "translated_query": null
+        },
+        {
+          "filename": "L29_V016/292.jpg",
+          "id": "L29_V016/292.jpg",
+          "path": "static\\images\\Keyframes_L29\\keyframes\\L29_V016\\292.jpg",
+          "rank": 2,
+          "similarity": 0.29386574029922485,
+          "translated_query": null
+        },
+        {
+          "filename": "L29_V016/293.jpg",
+          "id": "L29_V016/293.jpg",
+          "path": "static\\images\\Keyframes_L29\\keyframes\\L29_V016\\293.jpg",
+          "rank": 3,
+          "similarity": 0.2937411963939667,
+          "translated_query": null
+        },
+        {
+          "filename": "L29_V023/321.jpg",
+          "id": "L29_V023/321.jpg",
+          "path": "static\\images\\Keyframes_L29\\keyframes\\L29_V023\\321.jpg",
+          "rank": 4,
+          "similarity": 0.290833055973053,
+          "translated_query": null
+        },
+        {
+          "filename": "L29_V003/131.jpg",
+          "id": "L29_V003/131.jpg",
+          "path": "static\\images\\Keyframes_L29\\keyframes\\L29_V003\\131.jpg",
+          "rank": 5,
+          "similarity": 0.29078012704849243,
+          "translated_query": null
+        }
+      ],
+      "expected_keywords": [
+        "forest",
+        "tree"
+      ],
+      "found_keywords": []
+    }
+  ]
+}

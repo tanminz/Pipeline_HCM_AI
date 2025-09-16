@@ -1,0 +1,1795 @@
+{
+  "summary": {
+    "total_tests": 32,
+    "successful_tests": 32,
+    "failed_tests": 0,
+    "success_rate": 100.0,
+    "avg_search_time": 2.093249596655369
+  },
+  "test_results": [
+    {
+      "query": "2 con trâu đi qua bãi cỏ xanh có một cái cây",
+      "description": "Mô tả phức tạp về động vật và môi trường",
+      "search_time": 2.1344895362854004,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "translated_query": null,
+      "top_results": [
+        {
+          "filename": "L25_V051/328.jpg",
+          "id": "L25_V051/328.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V051\\328.jpg",
+          "rank": 1,
+          "similarity": 0.28643709421157837,
+          "translated_query": "2 con buffalo đi qua bãi grass blue có one fishi tree"
+        },
+        {
+          "filename": "L25_V051/336.jpg",
+          "id": "L25_V051/336.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V051\\336.jpg",
+          "rank": 2,
+          "similarity": 0.28633400797843933,
+          "translated_query": "2 con buffalo đi qua bãi grass blue có one fishi tree"
+        },
+        {
+          "filename": "L25_V051/338.jpg",
+          "id": "L25_V051/338.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V051\\338.jpg",
+          "rank": 3,
+          "similarity": 0.28506094217300415,
+          "translated_query": "2 con buffalo đi qua bãi grass blue có one fishi tree"
+        },
+        {
+          "filename": "L25_V051/326.jpg",
+          "id": "L25_V051/326.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V051\\326.jpg",
+          "rank": 4,
+          "similarity": 0.28429895639419556,
+          "translated_query": "2 con buffalo đi qua bãi grass blue có one fishi tree"
+        },
+        {
+          "filename": "L25_V051/327.jpg",
+          "id": "L25_V051/327.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V051\\327.jpg",
+          "rank": 5,
+          "similarity": 0.2834135591983795,
+          "translated_query": "2 con buffalo đi qua bãi grass blue có one fishi tree"
+        }
+      ],
+      "expected_keywords": [
+        "trâu",
+        "cỏ",
+        "cây"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "3 con bò đang ăn cỏ trên đồng cỏ xanh",
+      "description": "Nhiều động vật với hành động cụ thể",
+      "search_time": 2.076054573059082,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "translated_query": null,
+      "top_results": [
+        {
+          "filename": "L25_V051/326.jpg",
+          "id": "L25_V051/326.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V051\\326.jpg",
+          "rank": 1,
+          "similarity": 0.3620030879974365,
+          "translated_query": "3 con cow đang eating grass trên đồng grass blue"
+        },
+        {
+          "filename": "L25_V051/329.jpg",
+          "id": "L25_V051/329.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V051\\329.jpg",
+          "rank": 2,
+          "similarity": 0.3613702654838562,
+          "translated_query": "3 con cow đang eating grass trên đồng grass blue"
+        },
+        {
+          "filename": "L25_V051/327.jpg",
+          "id": "L25_V051/327.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V051\\327.jpg",
+          "rank": 3,
+          "similarity": 0.3607349395751953,
+          "translated_query": "3 con cow đang eating grass trên đồng grass blue"
+        },
+        {
+          "filename": "L25_V051/328.jpg",
+          "id": "L25_V051/328.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V051\\328.jpg",
+          "rank": 4,
+          "similarity": 0.36071914434432983,
+          "translated_query": "3 con cow đang eating grass trên đồng grass blue"
+        },
+        {
+          "filename": "L25_V051/330.jpg",
+          "id": "L25_V051/330.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V051\\330.jpg",
+          "rank": 5,
+          "similarity": 0.35870611667633057,
+          "translated_query": "3 con cow đang eating grass trên đồng grass blue"
+        }
+      ],
+      "expected_keywords": [
+        "bò",
+        "cỏ"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "con chó đen chạy trên đường phố",
+      "description": "Động vật với màu sắc và hành động",
+      "search_time": 2.097844123840332,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "translated_query": null,
+      "top_results": [
+        {
+          "filename": "L21_V012/100.jpg",
+          "id": "L21_V012/100.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V012\\100.jpg",
+          "rank": 1,
+          "similarity": 0.2875601649284363,
+          "translated_query": "con dog black running trên road street"
+        },
+        {
+          "filename": "L21_V023/110.jpg",
+          "id": "L21_V023/110.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V023\\110.jpg",
+          "rank": 2,
+          "similarity": 0.2861586809158325,
+          "translated_query": "con dog black running trên road street"
+        },
+        {
+          "filename": "L22_V006/188.jpg",
+          "id": "L22_V006/188.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V006\\188.jpg",
+          "rank": 3,
+          "similarity": 0.28042134642601013,
+          "translated_query": "con dog black running trên road street"
+        },
+        {
+          "filename": "L21_V003/165.jpg",
+          "id": "L21_V003/165.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V003\\165.jpg",
+          "rank": 4,
+          "similarity": 0.2803468108177185,
+          "translated_query": "con dog black running trên road street"
+        },
+        {
+          "filename": "L21_V008/195.jpg",
+          "id": "L21_V008/195.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V008\\195.jpg",
+          "rank": 5,
+          "similarity": 0.27827632427215576,
+          "translated_query": "con dog black running trên road street"
+        }
+      ],
+      "expected_keywords": [
+        "chó"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "con mèo trắng ngồi trên ghế sofa",
+      "description": "Động vật với màu sắc và vị trí",
+      "search_time": 2.0959959030151367,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "translated_query": null,
+      "top_results": [
+        {
+          "filename": "L25_V014/142.jpg",
+          "id": "L25_V014/142.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V014\\142.jpg",
+          "rank": 1,
+          "similarity": 0.2836022973060608,
+          "translated_query": "con cat tsnakeg sitting trên ctwor sofa"
+        },
+        {
+          "filename": "L25_V014/139.jpg",
+          "id": "L25_V014/139.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V014\\139.jpg",
+          "rank": 2,
+          "similarity": 0.283225953578949,
+          "translated_query": "con cat tsnakeg sitting trên ctwor sofa"
+        },
+        {
+          "filename": "L25_V014/144.jpg",
+          "id": "L25_V014/144.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V014\\144.jpg",
+          "rank": 3,
+          "similarity": 0.28299808502197266,
+          "translated_query": "con cat tsnakeg sitting trên ctwor sofa"
+        },
+        {
+          "filename": "L25_V014/140.jpg",
+          "id": "L25_V014/140.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V014\\140.jpg",
+          "rank": 4,
+          "similarity": 0.28232574462890625,
+          "translated_query": "con cat tsnakeg sitting trên ctwor sofa"
+        },
+        {
+          "filename": "L25_V014/141.jpg",
+          "id": "L25_V014/141.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V014\\141.jpg",
+          "rank": 5,
+          "similarity": 0.2822192311286926,
+          "translated_query": "con cat tsnakeg sitting trên ctwor sofa"
+        }
+      ],
+      "expected_keywords": [
+        "mèo"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "3 người đàn ông trượt tuyết trên núi",
+      "description": "Nhiều người với hoạt động thể thao",
+      "search_time": 2.0832388401031494,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "translated_query": null,
+      "top_results": [
+        {
+          "filename": "L22_V023/141.jpg",
+          "id": "L22_V023/141.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V023\\141.jpg",
+          "rank": 1,
+          "similarity": 0.3270939886569977,
+          "translated_query": "3 person man trượt snow trên mountain"
+        },
+        {
+          "filename": "L29_V002/444.jpg",
+          "id": "L29_V002/444.jpg",
+          "path": "static\\images\\Keyframes_L29\\keyframes\\L29_V002\\444.jpg",
+          "rank": 2,
+          "similarity": 0.3262214660644531,
+          "translated_query": "3 person man trượt snow trên mountain"
+        },
+        {
+          "filename": "L22_V023/142.jpg",
+          "id": "L22_V023/142.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V023\\142.jpg",
+          "rank": 3,
+          "similarity": 0.32620561122894287,
+          "translated_query": "3 person man trượt snow trên mountain"
+        },
+        {
+          "filename": "L22_V023/240.jpg",
+          "id": "L22_V023/240.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V023\\240.jpg",
+          "rank": 4,
+          "similarity": 0.3237540125846863,
+          "translated_query": "3 person man trượt snow trên mountain"
+        },
+        {
+          "filename": "L22_V025/177.jpg",
+          "id": "L22_V025/177.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V025\\177.jpg",
+          "rank": 5,
+          "similarity": 0.321249783039093,
+          "translated_query": "3 person man trượt snow trên mountain"
+        }
+      ],
+      "expected_keywords": [
+        "người",
+        "núi"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "2 phụ nữ đang nấu ăn trong nhà bếp",
+      "description": "Nhiều người với hoạt động nội trợ",
+      "search_time": 2.0838446617126465,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "translated_query": null,
+      "top_results": [
+        {
+          "filename": "L21_V018/031.jpg",
+          "id": "L21_V018/031.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V018\\031.jpg",
+          "rank": 1,
+          "similarity": 0.37909847497940063,
+          "translated_query": "2 woman đang cooking eating trong house bếp"
+        },
+        {
+          "filename": "L27_V006/257.jpg",
+          "id": "L27_V006/257.jpg",
+          "path": "static\\images\\Keyframes_L27\\keyframes\\L27_V006\\257.jpg",
+          "rank": 2,
+          "similarity": 0.3732230067253113,
+          "translated_query": "2 woman đang cooking eating trong house bếp"
+        },
+        {
+          "filename": "L29_V020/280.jpg",
+          "id": "L29_V020/280.jpg",
+          "path": "static\\images\\Keyframes_L29\\keyframes\\L29_V020\\280.jpg",
+          "rank": 3,
+          "similarity": 0.3693106770515442,
+          "translated_query": "2 woman đang cooking eating trong house bếp"
+        },
+        {
+          "filename": "L26_V145/111.jpg",
+          "id": "L26_V145/111.jpg",
+          "path": "static\\images\\Keyframes_L26_b\\keyframes\\L26_V145\\111.jpg",
+          "rank": 4,
+          "similarity": 0.3659237027168274,
+          "translated_query": "2 woman đang cooking eating trong house bếp"
+        },
+        {
+          "filename": "L27_V006/213.jpg",
+          "id": "L27_V006/213.jpg",
+          "path": "static\\images\\Keyframes_L27\\keyframes\\L27_V006\\213.jpg",
+          "rank": 5,
+          "similarity": 0.3632920980453491,
+          "translated_query": "2 woman đang cooking eating trong house bếp"
+        }
+      ],
+      "expected_keywords": [
+        "phụ nữ",
+        "nhà"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "5 trẻ em chơi đùa trong công viên",
+      "description": "Nhiều trẻ em với hoạt động vui chơi",
+      "search_time": 2.0691006183624268,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "translated_query": null,
+      "top_results": [
+        {
+          "filename": "L21_V022/083.jpg",
+          "id": "L21_V022/083.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V022\\083.jpg",
+          "rank": 1,
+          "similarity": 0.3123584985733032,
+          "translated_query": "5 child playing đùa trong park"
+        },
+        {
+          "filename": "L21_V018/089.jpg",
+          "id": "L21_V018/089.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V018\\089.jpg",
+          "rank": 2,
+          "similarity": 0.30904585123062134,
+          "translated_query": "5 child playing đùa trong park"
+        },
+        {
+          "filename": "L21_V022/081.jpg",
+          "id": "L21_V022/081.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V022\\081.jpg",
+          "rank": 3,
+          "similarity": 0.3079847991466522,
+          "translated_query": "5 child playing đùa trong park"
+        },
+        {
+          "filename": "L21_V015/100.jpg",
+          "id": "L21_V015/100.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V015\\100.jpg",
+          "rank": 4,
+          "similarity": 0.30677565932273865,
+          "translated_query": "5 child playing đùa trong park"
+        },
+        {
+          "filename": "L25_V049/195.jpg",
+          "id": "L25_V049/195.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V049\\195.jpg",
+          "rank": 5,
+          "similarity": 0.30534911155700684,
+          "translated_query": "5 child playing đùa trong park"
+        }
+      ],
+      "expected_keywords": [
+        "trẻ em"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "người đàn ông lái xe máy trên đường",
+      "description": "Người với phương tiện và hành động",
+      "search_time": 2.0973899364471436,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "translated_query": null,
+      "top_results": [
+        {
+          "filename": "L21_V019/112.jpg",
+          "id": "L21_V019/112.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V019\\112.jpg",
+          "rank": 1,
+          "similarity": 0.3221462666988373,
+          "translated_query": "person man leafi mobigrcycle trên road"
+        },
+        {
+          "filename": "L21_V008/161.jpg",
+          "id": "L21_V008/161.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V008\\161.jpg",
+          "rank": 2,
+          "similarity": 0.318398654460907,
+          "translated_query": "person man leafi mobigrcycle trên road"
+        },
+        {
+          "filename": "L21_V019/108.jpg",
+          "id": "L21_V019/108.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V019\\108.jpg",
+          "rank": 3,
+          "similarity": 0.31762784719467163,
+          "translated_query": "person man leafi mobigrcycle trên road"
+        },
+        {
+          "filename": "L23_V007/041.jpg",
+          "id": "L23_V007/041.jpg",
+          "path": "static\\images\\Keyframes_L23\\keyframes\\L23_V007\\041.jpg",
+          "rank": 4,
+          "similarity": 0.3173704445362091,
+          "translated_query": "person man leafi mobigrcycle trên road"
+        },
+        {
+          "filename": "L22_V027/244.jpg",
+          "id": "L22_V027/244.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V027\\244.jpg",
+          "rank": 5,
+          "similarity": 0.31627339124679565,
+          "translated_query": "person man leafi mobigrcycle trên road"
+        }
+      ],
+      "expected_keywords": [
+        "người",
+        "xe máy"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "con lân vàng nhảy múa",
+      "description": "Sinh vật thần thoại với màu sắc và hành động",
+      "search_time": 2.0815112590789795,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "translated_query": null,
+      "top_results": [
+        {
+          "filename": "L24_V003/192.jpg",
+          "id": "L24_V003/192.jpg",
+          "path": "static\\images\\Keyframes_L24\\keyframes\\L24_V003\\192.jpg",
+          "rank": 1,
+          "similarity": 0.2868943214416504,
+          "translated_query": "con unicorn yellow dancing"
+        },
+        {
+          "filename": "L24_V011/186.jpg",
+          "id": "L24_V011/186.jpg",
+          "path": "static\\images\\Keyframes_L24\\keyframes\\L24_V011\\186.jpg",
+          "rank": 2,
+          "similarity": 0.2772864103317261,
+          "translated_query": "con unicorn yellow dancing"
+        },
+        {
+          "filename": "L24_V028/024.jpg",
+          "id": "L24_V028/024.jpg",
+          "path": "static\\images\\Keyframes_L24\\keyframes\\L24_V028\\024.jpg",
+          "rank": 3,
+          "similarity": 0.27547121047973633,
+          "translated_query": "con unicorn yellow dancing"
+        },
+        {
+          "filename": "L24_V023/123.jpg",
+          "id": "L24_V023/123.jpg",
+          "path": "static\\images\\Keyframes_L24\\keyframes\\L24_V023\\123.jpg",
+          "rank": 4,
+          "similarity": 0.27429884672164917,
+          "translated_query": "con unicorn yellow dancing"
+        },
+        {
+          "filename": "L24_V045/044.jpg",
+          "id": "L24_V045/044.jpg",
+          "path": "static\\images\\Keyframes_L24\\keyframes\\L24_V045\\044.jpg",
+          "rank": 5,
+          "similarity": 0.2735164761543274,
+          "translated_query": "con unicorn yellow dancing"
+        }
+      ],
+      "expected_keywords": [
+        "lân"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "con rồng đỏ bay trên bầu trời",
+      "description": "Sinh vật thần thoại với màu sắc và môi trường",
+      "search_time": 2.081369400024414,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "translated_query": null,
+      "top_results": [
+        {
+          "filename": "L21_V027/009.jpg",
+          "id": "L21_V027/009.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V027\\009.jpg",
+          "rank": 1,
+          "similarity": 0.32684916257858276,
+          "translated_query": "con dragon red flying trên bầu trời"
+        },
+        {
+          "filename": "L22_V023/059.jpg",
+          "id": "L22_V023/059.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V023\\059.jpg",
+          "rank": 2,
+          "similarity": 0.321474552154541,
+          "translated_query": "con dragon red flying trên bầu trời"
+        },
+        {
+          "filename": "L22_V019/110.jpg",
+          "id": "L22_V019/110.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V019\\110.jpg",
+          "rank": 3,
+          "similarity": 0.3212879002094269,
+          "translated_query": "con dragon red flying trên bầu trời"
+        },
+        {
+          "filename": "L25_V024/151.jpg",
+          "id": "L25_V024/151.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V024\\151.jpg",
+          "rank": 4,
+          "similarity": 0.31584858894348145,
+          "translated_query": "con dragon red flying trên bầu trời"
+        },
+        {
+          "filename": "L22_V030/085.jpg",
+          "id": "L22_V030/085.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V030\\085.jpg",
+          "rank": 5,
+          "similarity": 0.3152890205383301,
+          "translated_query": "con dragon red flying trên bầu trời"
+        }
+      ],
+      "expected_keywords": [
+        "rồng"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "con phượng hoàng xanh đậu trên cây",
+      "description": "Sinh vật thần thoại với màu sắc và vị trí",
+      "search_time": 2.0764217376708984,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "translated_query": null,
+      "top_results": [
+        {
+          "filename": "L27_V007/183.jpg",
+          "id": "L27_V007/183.jpg",
+          "path": "static\\images\\Keyframes_L27\\keyframes\\L27_V007\\183.jpg",
+          "rank": 1,
+          "similarity": 0.267484575510025,
+          "translated_query": "con phoenix blue perching trên tree"
+        },
+        {
+          "filename": "L27_V011/272.jpg",
+          "id": "L27_V011/272.jpg",
+          "path": "static\\images\\Keyframes_L27\\keyframes\\L27_V011\\272.jpg",
+          "rank": 2,
+          "similarity": 0.26344919204711914,
+          "translated_query": "con phoenix blue perching trên tree"
+        },
+        {
+          "filename": "L27_V013/279.jpg",
+          "id": "L27_V013/279.jpg",
+          "path": "static\\images\\Keyframes_L27\\keyframes\\L27_V013\\279.jpg",
+          "rank": 3,
+          "similarity": 0.2619859576225281,
+          "translated_query": "con phoenix blue perching trên tree"
+        },
+        {
+          "filename": "L22_V007/087.jpg",
+          "id": "L22_V007/087.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V007\\087.jpg",
+          "rank": 4,
+          "similarity": 0.2613086700439453,
+          "translated_query": "con phoenix blue perching trên tree"
+        },
+        {
+          "filename": "L27_V004/138.jpg",
+          "id": "L27_V004/138.jpg",
+          "path": "static\\images\\Keyframes_L27\\keyframes\\L27_V004\\138.jpg",
+          "rank": 5,
+          "similarity": 0.2608893811702728,
+          "translated_query": "con phoenix blue perching trên tree"
+        }
+      ],
+      "expected_keywords": [
+        "phượng hoàng"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "Bài toán có đáp án là 51",
+      "description": "Nội dung toán học với số cụ thể",
+      "search_time": 2.1163735389709473,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "translated_query": null,
+      "top_results": [
+        {
+          "filename": "L22_V015/201.jpg",
+          "id": "L22_V015/201.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V015\\201.jpg",
+          "rank": 1,
+          "similarity": 0.2956320643424988,
+          "translated_query": "bài bigán có rockp án is 51"
+        },
+        {
+          "filename": "L22_V015/202.jpg",
+          "id": "L22_V015/202.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V015\\202.jpg",
+          "rank": 2,
+          "similarity": 0.29467087984085083,
+          "translated_query": "bài bigán có rockp án is 51"
+        },
+        {
+          "filename": "L22_V008/167.jpg",
+          "id": "L22_V008/167.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V008\\167.jpg",
+          "rank": 3,
+          "similarity": 0.28875187039375305,
+          "translated_query": "bài bigán có rockp án is 51"
+        },
+        {
+          "filename": "L22_V018/207.jpg",
+          "id": "L22_V018/207.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V018\\207.jpg",
+          "rank": 4,
+          "similarity": 0.2884465456008911,
+          "translated_query": "bài bigán có rockp án is 51"
+        },
+        {
+          "filename": "L25_V045/251.jpg",
+          "id": "L25_V045/251.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V045\\251.jpg",
+          "rank": 5,
+          "similarity": 0.2878967523574829,
+          "translated_query": "bài bigán có rockp án is 51"
+        }
+      ],
+      "expected_keywords": [
+        "toán"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "Phương trình x + y = 25",
+      "description": "Phương trình toán học",
+      "search_time": 2.0926079750061035,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "translated_query": null,
+      "top_results": [
+        {
+          "filename": "L25_V040/122.jpg",
+          "id": "L25_V040/122.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V040\\122.jpg",
+          "rank": 1,
+          "similarity": 0.3291548490524292,
+          "translated_query": "equation x plus y equals 25"
+        },
+        {
+          "filename": "L25_V052/078.jpg",
+          "id": "L25_V052/078.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V052\\078.jpg",
+          "rank": 2,
+          "similarity": 0.3138330578804016,
+          "translated_query": "equation x plus y equals 25"
+        },
+        {
+          "filename": "L25_V040/121.jpg",
+          "id": "L25_V040/121.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V040\\121.jpg",
+          "rank": 3,
+          "similarity": 0.3137982487678528,
+          "translated_query": "equation x plus y equals 25"
+        },
+        {
+          "filename": "L25_V040/119.jpg",
+          "id": "L25_V040/119.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V040\\119.jpg",
+          "rank": 4,
+          "similarity": 0.31271523237228394,
+          "translated_query": "equation x plus y equals 25"
+        },
+        {
+          "filename": "L25_V040/120.jpg",
+          "id": "L25_V040/120.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V040\\120.jpg",
+          "rank": 5,
+          "similarity": 0.31082093715667725,
+          "translated_query": "equation x plus y equals 25"
+        }
+      ],
+      "expected_keywords": [
+        "phương trình"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "Bảng cửu chương nhân 7",
+      "description": "Bảng cửu chương",
+      "search_time": 2.097027540206909,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "translated_query": null,
+      "top_results": [
+        {
+          "filename": "L25_V022/311.jpg",
+          "id": "L25_V022/311.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V022\\311.jpg",
+          "rank": 1,
+          "similarity": 0.36899009346961975,
+          "translated_query": "table cửu chương multiply 7"
+        },
+        {
+          "filename": "L25_V022/312.jpg",
+          "id": "L25_V022/312.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V022\\312.jpg",
+          "rank": 2,
+          "similarity": 0.36898547410964966,
+          "translated_query": "table cửu chương multiply 7"
+        },
+        {
+          "filename": "L25_V022/308.jpg",
+          "id": "L25_V022/308.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V022\\308.jpg",
+          "rank": 3,
+          "similarity": 0.3687731921672821,
+          "translated_query": "table cửu chương multiply 7"
+        },
+        {
+          "filename": "L25_V022/304.jpg",
+          "id": "L25_V022/304.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V022\\304.jpg",
+          "rank": 4,
+          "similarity": 0.3684871196746826,
+          "translated_query": "table cửu chương multiply 7"
+        },
+        {
+          "filename": "L25_V022/309.jpg",
+          "id": "L25_V022/309.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V022\\309.jpg",
+          "rank": 5,
+          "similarity": 0.3683308959007263,
+          "translated_query": "table cửu chương multiply 7"
+        }
+      ],
+      "expected_keywords": [
+        "bảng",
+        "nhân"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "xe hơi đỏ đậu trước tòa nhà cao tầng",
+      "description": "Phương tiện với màu sắc và kiến trúc",
+      "search_time": 2.1024088859558105,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "translated_query": null,
+      "top_results": [
+        {
+          "filename": "L22_V007/239.jpg",
+          "id": "L22_V007/239.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V007\\239.jpg",
+          "rank": 1,
+          "similarity": 0.34252166748046875,
+          "translated_query": "car red perching trước tòa house tall tầng"
+        },
+        {
+          "filename": "L22_V001/019.jpg",
+          "id": "L22_V001/019.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V001\\019.jpg",
+          "rank": 2,
+          "similarity": 0.3390158414840698,
+          "translated_query": "car red perching trước tòa house tall tầng"
+        },
+        {
+          "filename": "L22_V007/199.jpg",
+          "id": "L22_V007/199.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V007\\199.jpg",
+          "rank": 3,
+          "similarity": 0.332779198884964,
+          "translated_query": "car red perching trước tòa house tall tầng"
+        },
+        {
+          "filename": "L21_V021/096.jpg",
+          "id": "L21_V021/096.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V021\\096.jpg",
+          "rank": 4,
+          "similarity": 0.3246126174926758,
+          "translated_query": "car red perching trước tòa house tall tầng"
+        },
+        {
+          "filename": "L22_V014/172.jpg",
+          "id": "L22_V014/172.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V014\\172.jpg",
+          "rank": 5,
+          "similarity": 0.3215404748916626,
+          "translated_query": "car red perching trước tòa house tall tầng"
+        }
+      ],
+      "expected_keywords": [
+        "xe hơi",
+        "tòa nhà"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "máy bay trắng bay trên biển xanh",
+      "description": "Phương tiện với màu sắc và môi trường",
+      "search_time": 2.106339931488037,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "translated_query": null,
+      "top_results": [
+        {
+          "filename": "L21_V024/220.jpg",
+          "id": "L21_V024/220.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V024\\220.jpg",
+          "rank": 1,
+          "similarity": 0.30963021516799927,
+          "translated_query": "airplane tsnakeg flying trên sea blue"
+        },
+        {
+          "filename": "L29_V002/389.jpg",
+          "id": "L29_V002/389.jpg",
+          "path": "static\\images\\Keyframes_L29\\keyframes\\L29_V002\\389.jpg",
+          "rank": 2,
+          "similarity": 0.2855287194252014,
+          "translated_query": "airplane tsnakeg flying trên sea blue"
+        },
+        {
+          "filename": "L29_V002/313.jpg",
+          "id": "L29_V002/313.jpg",
+          "path": "static\\images\\Keyframes_L29\\keyframes\\L29_V002\\313.jpg",
+          "rank": 3,
+          "similarity": 0.28529906272888184,
+          "translated_query": "airplane tsnakeg flying trên sea blue"
+        },
+        {
+          "filename": "L22_V017/150.jpg",
+          "id": "L22_V017/150.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V017\\150.jpg",
+          "rank": 4,
+          "similarity": 0.2837100923061371,
+          "translated_query": "airplane tsnakeg flying trên sea blue"
+        },
+        {
+          "filename": "L22_V026/156.jpg",
+          "id": "L22_V026/156.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V026\\156.jpg",
+          "rank": 5,
+          "similarity": 0.2833338975906372,
+          "translated_query": "airplane tsnakeg flying trên sea blue"
+        }
+      ],
+      "expected_keywords": [
+        "máy bay",
+        "biển"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "tàu thủy lớn neo đậu ở cảng",
+      "description": "Phương tiện với kích thước và vị trí",
+      "search_time": 2.1065804958343506,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "translated_query": null,
+      "top_results": [
+        {
+          "filename": "L21_V014/085.jpg",
+          "id": "L21_V014/085.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V014\\085.jpg",
+          "rank": 1,
+          "similarity": 0.33228516578674316,
+          "translated_query": "ship thủy big neo perching ở port"
+        },
+        {
+          "filename": "L21_V005/033.jpg",
+          "id": "L21_V005/033.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V005\\033.jpg",
+          "rank": 2,
+          "similarity": 0.3207462430000305,
+          "translated_query": "ship thủy big neo perching ở port"
+        },
+        {
+          "filename": "L21_V019/091.jpg",
+          "id": "L21_V019/091.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V019\\091.jpg",
+          "rank": 3,
+          "similarity": 0.3163996934890747,
+          "translated_query": "ship thủy big neo perching ở port"
+        },
+        {
+          "filename": "L22_V024/065.jpg",
+          "id": "L22_V024/065.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V024\\065.jpg",
+          "rank": 4,
+          "similarity": 0.31623703241348267,
+          "translated_query": "ship thủy big neo perching ở port"
+        },
+        {
+          "filename": "L22_V016/196.jpg",
+          "id": "L22_V016/196.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V016\\196.jpg",
+          "rank": 5,
+          "similarity": 0.31460458040237427,
+          "translated_query": "ship thủy big neo perching ở port"
+        }
+      ],
+      "expected_keywords": [
+        "tàu",
+        "cảng"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "trời mưa to trên đường phố ban đêm",
+      "description": "Thời tiết với thời gian và địa điểm",
+      "search_time": 2.1057286262512207,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "translated_query": null,
+      "top_results": [
+        {
+          "filename": "L22_V010/252.jpg",
+          "id": "L22_V010/252.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V010\\252.jpg",
+          "rank": 1,
+          "similarity": 0.3119533061981201,
+          "translated_query": "trời rain big trên road street nighttime"
+        },
+        {
+          "filename": "L21_V019/202.jpg",
+          "id": "L21_V019/202.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V019\\202.jpg",
+          "rank": 2,
+          "similarity": 0.3098217248916626,
+          "translated_query": "trời rain big trên road street nighttime"
+        },
+        {
+          "filename": "L21_V001/175.jpg",
+          "id": "L21_V001/175.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V001\\175.jpg",
+          "rank": 3,
+          "similarity": 0.30720221996307373,
+          "translated_query": "trời rain big trên road street nighttime"
+        },
+        {
+          "filename": "L21_V003/123.jpg",
+          "id": "L21_V003/123.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V003\\123.jpg",
+          "rank": 4,
+          "similarity": 0.30685141682624817,
+          "translated_query": "trời rain big trên road street nighttime"
+        },
+        {
+          "filename": "L21_V010/120.jpg",
+          "id": "L21_V010/120.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V010\\120.jpg",
+          "rank": 5,
+          "similarity": 0.30442994832992554,
+          "translated_query": "trời rain big trên road street nighttime"
+        }
+      ],
+      "expected_keywords": [
+        "mưa",
+        "đường"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "nắng vàng chiếu sáng trên đồng lúa",
+      "description": "Thời tiết với màu sắc và môi trường",
+      "search_time": 2.1144633293151855,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "translated_query": null,
+      "top_results": [
+        {
+          "filename": "L22_V023/080.jpg",
+          "id": "L22_V023/080.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V023\\080.jpg",
+          "rank": 1,
+          "similarity": 0.30020952224731445,
+          "translated_query": "sunny yellow shining trên rice field"
+        },
+        {
+          "filename": "L22_V023/091.jpg",
+          "id": "L22_V023/091.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V023\\091.jpg",
+          "rank": 2,
+          "similarity": 0.3000868558883667,
+          "translated_query": "sunny yellow shining trên rice field"
+        },
+        {
+          "filename": "L22_V015/154.jpg",
+          "id": "L22_V015/154.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V015\\154.jpg",
+          "rank": 3,
+          "similarity": 0.29671090841293335,
+          "translated_query": "sunny yellow shining trên rice field"
+        },
+        {
+          "filename": "L21_V021/210.jpg",
+          "id": "L21_V021/210.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V021\\210.jpg",
+          "rank": 4,
+          "similarity": 0.2948976755142212,
+          "translated_query": "sunny yellow shining trên rice field"
+        },
+        {
+          "filename": "L21_V021/212.jpg",
+          "id": "L21_V021/212.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V021\\212.jpg",
+          "rank": 5,
+          "similarity": 0.2944111227989197,
+          "translated_query": "sunny yellow shining trên rice field"
+        }
+      ],
+      "expected_keywords": [
+        "nắng",
+        "lúa"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "sương mù dày đặc bao phủ rừng",
+      "description": "Thời tiết với môi trường",
+      "search_time": 2.0939347743988037,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "translated_query": null,
+      "top_results": [
+        {
+          "filename": "L21_V011/119.jpg",
+          "id": "L21_V011/119.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V011\\119.jpg",
+          "rank": 1,
+          "similarity": 0.32480451464653015,
+          "translated_query": "fog thick threeo phủ forest"
+        },
+        {
+          "filename": "L21_V011/120.jpg",
+          "id": "L21_V011/120.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V011\\120.jpg",
+          "rank": 2,
+          "similarity": 0.32459378242492676,
+          "translated_query": "fog thick threeo phủ forest"
+        },
+        {
+          "filename": "L27_V004/247.jpg",
+          "id": "L27_V004/247.jpg",
+          "path": "static\\images\\Keyframes_L27\\keyframes\\L27_V004\\247.jpg",
+          "rank": 3,
+          "similarity": 0.32307684421539307,
+          "translated_query": "fog thick threeo phủ forest"
+        },
+        {
+          "filename": "L27_V013/278.jpg",
+          "id": "L27_V013/278.jpg",
+          "path": "static\\images\\Keyframes_L27\\keyframes\\L27_V013\\278.jpg",
+          "rank": 4,
+          "similarity": 0.317642480134964,
+          "translated_query": "fog thick threeo phủ forest"
+        },
+        {
+          "filename": "L21_V011/062.jpg",
+          "id": "L21_V011/062.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V011\\062.jpg",
+          "rank": 5,
+          "similarity": 0.31521111726760864,
+          "translated_query": "fog thick threeo phủ forest"
+        }
+      ],
+      "expected_keywords": [
+        "sương mù",
+        "rừng"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "nồi cơm điện đang nấu cơm trắng",
+      "description": "Thiết bị nhà bếp với thực phẩm",
+      "search_time": 2.1197009086608887,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "translated_query": null,
+      "top_results": [
+        {
+          "filename": "L26_V100/110.jpg",
+          "id": "L26_V100/110.jpg",
+          "path": "static\\images\\Keyframes_L26_b\\keyframes\\L26_V100\\110.jpg",
+          "rank": 1,
+          "similarity": 0.3593098521232605,
+          "translated_query": "pot rice điện đang cooking rice tsnakeg"
+        },
+        {
+          "filename": "L29_V020/253.jpg",
+          "id": "L29_V020/253.jpg",
+          "path": "static\\images\\Keyframes_L29\\keyframes\\L29_V020\\253.jpg",
+          "rank": 2,
+          "similarity": 0.34845802187919617,
+          "translated_query": "pot rice điện đang cooking rice tsnakeg"
+        },
+        {
+          "filename": "L27_V006/215.jpg",
+          "id": "L27_V006/215.jpg",
+          "path": "static\\images\\Keyframes_L27\\keyframes\\L27_V006\\215.jpg",
+          "rank": 3,
+          "similarity": 0.3448147177696228,
+          "translated_query": "pot rice điện đang cooking rice tsnakeg"
+        },
+        {
+          "filename": "L22_V007/095.jpg",
+          "id": "L22_V007/095.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V007\\095.jpg",
+          "rank": 4,
+          "similarity": 0.34279996156692505,
+          "translated_query": "pot rice điện đang cooking rice tsnakeg"
+        },
+        {
+          "filename": "L26_V333/136.jpg",
+          "id": "L26_V333/136.jpg",
+          "path": "static\\images\\Keyframes_L26_d\\keyframes\\L26_V333\\136.jpg",
+          "rank": 5,
+          "similarity": 0.3421022295951843,
+          "translated_query": "pot rice điện đang cooking rice tsnakeg"
+        }
+      ],
+      "expected_keywords": [
+        "nồi",
+        "cơm"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "bàn ăn có nhiều món ăn ngon",
+      "description": "Đồ nội thất với thực phẩm",
+      "search_time": 2.1107516288757324,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "translated_query": null,
+      "top_results": [
+        {
+          "filename": "L21_V006/073.jpg",
+          "id": "L21_V006/073.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V006\\073.jpg",
+          "rank": 1,
+          "similarity": 0.31246423721313477,
+          "translated_query": "table eating có nhiều món eating ngon"
+        },
+        {
+          "filename": "L21_V018/063.jpg",
+          "id": "L21_V018/063.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V018\\063.jpg",
+          "rank": 2,
+          "similarity": 0.3123311996459961,
+          "translated_query": "table eating có nhiều món eating ngon"
+        },
+        {
+          "filename": "L21_V024/043.jpg",
+          "id": "L21_V024/043.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V024\\043.jpg",
+          "rank": 3,
+          "similarity": 0.3116167187690735,
+          "translated_query": "table eating có nhiều món eating ngon"
+        },
+        {
+          "filename": "L22_V004/074.jpg",
+          "id": "L22_V004/074.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V004\\074.jpg",
+          "rank": 4,
+          "similarity": 0.3111109733581543,
+          "translated_query": "table eating có nhiều món eating ngon"
+        },
+        {
+          "filename": "L21_V027/055.jpg",
+          "id": "L21_V027/055.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V027\\055.jpg",
+          "rank": 5,
+          "similarity": 0.3071960210800171,
+          "translated_query": "table eating có nhiều món eating ngon"
+        }
+      ],
+      "expected_keywords": [
+        "bàn",
+        "ăn"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "tủ lạnh chứa đầy rau xanh",
+      "description": "Thiết bị với thực phẩm",
+      "search_time": 2.0663275718688965,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "translated_query": null,
+      "top_results": [
+        {
+          "filename": "L26_V341/147.jpg",
+          "id": "L26_V341/147.jpg",
+          "path": "static\\images\\Keyframes_L26_d\\keyframes\\L26_V341\\147.jpg",
+          "rank": 1,
+          "similarity": 0.3073379397392273,
+          "translated_query": "cabinet cold full of vegetables blue"
+        },
+        {
+          "filename": "L26_V387/014.jpg",
+          "id": "L26_V387/014.jpg",
+          "path": "static\\images\\Keyframes_L26_d\\keyframes\\L26_V387\\014.jpg",
+          "rank": 2,
+          "similarity": 0.3057818114757538,
+          "translated_query": "cabinet cold full of vegetables blue"
+        },
+        {
+          "filename": "L26_V440/133.jpg",
+          "id": "L26_V440/133.jpg",
+          "path": "static\\images\\Keyframes_L26_e\\keyframes\\L26_V440\\133.jpg",
+          "rank": 3,
+          "similarity": 0.30317422747612,
+          "translated_query": "cabinet cold full of vegetables blue"
+        },
+        {
+          "filename": "L26_V389/128.jpg",
+          "id": "L26_V389/128.jpg",
+          "path": "static\\images\\Keyframes_L26_d\\keyframes\\L26_V389\\128.jpg",
+          "rank": 4,
+          "similarity": 0.3005219101905823,
+          "translated_query": "cabinet cold full of vegetables blue"
+        },
+        {
+          "filename": "L26_V396/037.jpg",
+          "id": "L26_V396/037.jpg",
+          "path": "static\\images\\Keyframes_L26_d\\keyframes\\L26_V396\\037.jpg",
+          "rank": 5,
+          "similarity": 0.297372430562973,
+          "translated_query": "cabinet cold full of vegetables blue"
+        }
+      ],
+      "expected_keywords": [
+        "tủ lạnh",
+        "rau"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "quả bóng đá đang lăn trên sân cỏ",
+      "description": "Thể thao với thiết bị và địa điểm",
+      "search_time": 2.0908262729644775,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "translated_query": null,
+      "top_results": [
+        {
+          "filename": "L27_V007/314.jpg",
+          "id": "L27_V007/314.jpg",
+          "path": "static\\images\\Keyframes_L27\\keyframes\\L27_V007\\314.jpg",
+          "rank": 1,
+          "similarity": 0.3291838765144348,
+          "translated_query": "quả threell rock đang leating trên field grass"
+        },
+        {
+          "filename": "L22_V015/118.jpg",
+          "id": "L22_V015/118.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V015\\118.jpg",
+          "rank": 2,
+          "similarity": 0.32642662525177,
+          "translated_query": "quả threell rock đang leating trên field grass"
+        },
+        {
+          "filename": "L21_V005/026.jpg",
+          "id": "L21_V005/026.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V005\\026.jpg",
+          "rank": 3,
+          "similarity": 0.32366013526916504,
+          "translated_query": "quả threell rock đang leating trên field grass"
+        },
+        {
+          "filename": "L25_V051/006.jpg",
+          "id": "L25_V051/006.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V051\\006.jpg",
+          "rank": 4,
+          "similarity": 0.3181524872779846,
+          "translated_query": "quả threell rock đang leating trên field grass"
+        },
+        {
+          "filename": "L23_V010/011.jpg",
+          "id": "L23_V010/011.jpg",
+          "path": "static\\images\\Keyframes_L23\\keyframes\\L23_V010\\011.jpg",
+          "rank": 5,
+          "similarity": 0.31779131293296814,
+          "translated_query": "quả threell rock đang leating trên field grass"
+        }
+      ],
+      "expected_keywords": [
+        "bóng",
+        "sân"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "vợt tennis và bóng vàng",
+      "description": "Thể thao với thiết bị và màu sắc",
+      "search_time": 2.0821619033813477,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "translated_query": null,
+      "top_results": [
+        {
+          "filename": "L26_V114/015.jpg",
+          "id": "L26_V114/015.jpg",
+          "path": "static\\images\\Keyframes_L26_b\\keyframes\\L26_V114\\015.jpg",
+          "rank": 1,
+          "similarity": 0.27597883343696594,
+          "translated_query": "racket tennis và threell yellow"
+        },
+        {
+          "filename": "L26_V114/034.jpg",
+          "id": "L26_V114/034.jpg",
+          "path": "static\\images\\Keyframes_L26_b\\keyframes\\L26_V114\\034.jpg",
+          "rank": 2,
+          "similarity": 0.2617051601409912,
+          "translated_query": "racket tennis và threell yellow"
+        },
+        {
+          "filename": "L22_V018/138.jpg",
+          "id": "L22_V018/138.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V018\\138.jpg",
+          "rank": 3,
+          "similarity": 0.2538718581199646,
+          "translated_query": "racket tennis và threell yellow"
+        },
+        {
+          "filename": "L26_V144/145.jpg",
+          "id": "L26_V144/145.jpg",
+          "path": "static\\images\\Keyframes_L26_b\\keyframes\\L26_V144\\145.jpg",
+          "rank": 4,
+          "similarity": 0.25164830684661865,
+          "translated_query": "racket tennis và threell yellow"
+        },
+        {
+          "filename": "L26_V345/040.jpg",
+          "id": "L26_V345/040.jpg",
+          "path": "static\\images\\Keyframes_L26_d\\keyframes\\L26_V345\\040.jpg",
+          "rank": 5,
+          "similarity": 0.24860887229442596,
+          "translated_query": "racket tennis và threell yellow"
+        }
+      ],
+      "expected_keywords": [
+        "vợt",
+        "bóng"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "xe đạp đua chạy trên đường đua",
+      "description": "Thể thao với phương tiện và địa điểm",
+      "search_time": 2.0827693939208984,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "translated_query": null,
+      "top_results": [
+        {
+          "filename": "L21_V012/107.jpg",
+          "id": "L21_V012/107.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V012\\107.jpg",
+          "rank": 1,
+          "similarity": 0.3375612199306488,
+          "translated_query": "bicycle đua running trên road đua"
+        },
+        {
+          "filename": "L23_V020/014.jpg",
+          "id": "L23_V020/014.jpg",
+          "path": "static\\images\\Keyframes_L23\\keyframes\\L23_V020\\014.jpg",
+          "rank": 2,
+          "similarity": 0.33145684003829956,
+          "translated_query": "bicycle đua running trên road đua"
+        },
+        {
+          "filename": "L23_V007/041.jpg",
+          "id": "L23_V007/041.jpg",
+          "path": "static\\images\\Keyframes_L23\\keyframes\\L23_V007\\041.jpg",
+          "rank": 3,
+          "similarity": 0.33113354444503784,
+          "translated_query": "bicycle đua running trên road đua"
+        },
+        {
+          "filename": "L22_V015/236.jpg",
+          "id": "L22_V015/236.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V015\\236.jpg",
+          "rank": 4,
+          "similarity": 0.3274858295917511,
+          "translated_query": "bicycle đua running trên road đua"
+        },
+        {
+          "filename": "L21_V021/053.jpg",
+          "id": "L21_V021/053.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V021\\053.jpg",
+          "rank": 5,
+          "similarity": 0.3224868178367615,
+          "translated_query": "bicycle đua running trên road đua"
+        }
+      ],
+      "expected_keywords": [
+        "xe đạp",
+        "đường"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "máy tính để bàn có màn hình lớn",
+      "description": "Công nghệ với thiết bị",
+      "search_time": 2.0927295684814453,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "translated_query": null,
+      "top_results": [
+        {
+          "filename": "L22_V015/070.jpg",
+          "id": "L22_V015/070.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V015\\070.jpg",
+          "rank": 1,
+          "similarity": 0.33543968200683594,
+          "translated_query": "computer để table có screen big"
+        },
+        {
+          "filename": "L22_V025/050.jpg",
+          "id": "L22_V025/050.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V025\\050.jpg",
+          "rank": 2,
+          "similarity": 0.33470767736434937,
+          "translated_query": "computer để table có screen big"
+        },
+        {
+          "filename": "L21_V018/146.jpg",
+          "id": "L21_V018/146.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V018\\146.jpg",
+          "rank": 3,
+          "similarity": 0.3332090377807617,
+          "translated_query": "computer để table có screen big"
+        },
+        {
+          "filename": "L22_V014/191.jpg",
+          "id": "L22_V014/191.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V014\\191.jpg",
+          "rank": 4,
+          "similarity": 0.3332008123397827,
+          "translated_query": "computer để table có screen big"
+        },
+        {
+          "filename": "L21_V024/080.jpg",
+          "id": "L21_V024/080.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V024\\080.jpg",
+          "rank": 5,
+          "similarity": 0.33294013142585754,
+          "translated_query": "computer để table có screen big"
+        }
+      ],
+      "expected_keywords": [
+        "máy tính",
+        "màn hình"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "điện thoại di động đang sạc pin",
+      "description": "Công nghệ với hành động",
+      "search_time": 2.0731358528137207,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "translated_query": null,
+      "top_results": [
+        {
+          "filename": "L25_V007/209.jpg",
+          "id": "L25_V007/209.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V007\\209.jpg",
+          "rank": 1,
+          "similarity": 0.309280663728714,
+          "translated_query": "phone mobile đang charging battery"
+        },
+        {
+          "filename": "L25_V007/211.jpg",
+          "id": "L25_V007/211.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V007\\211.jpg",
+          "rank": 2,
+          "similarity": 0.3078759014606476,
+          "translated_query": "phone mobile đang charging battery"
+        },
+        {
+          "filename": "L25_V007/210.jpg",
+          "id": "L25_V007/210.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V007\\210.jpg",
+          "rank": 3,
+          "similarity": 0.30747324228286743,
+          "translated_query": "phone mobile đang charging battery"
+        },
+        {
+          "filename": "L25_V007/208.jpg",
+          "id": "L25_V007/208.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V007\\208.jpg",
+          "rank": 4,
+          "similarity": 0.30704864859580994,
+          "translated_query": "phone mobile đang charging battery"
+        },
+        {
+          "filename": "L25_V007/213.jpg",
+          "id": "L25_V007/213.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V007\\213.jpg",
+          "rank": 5,
+          "similarity": 0.30676358938217163,
+          "translated_query": "phone mobile đang charging battery"
+        }
+      ],
+      "expected_keywords": [
+        "điện thoại"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "bàn làm việc có laptop và sách",
+      "description": "Văn phòng với thiết bị",
+      "search_time": 2.098665237426758,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "translated_query": null,
+      "top_results": [
+        {
+          "filename": "L25_V014/166.jpg",
+          "id": "L25_V014/166.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V014\\166.jpg",
+          "rank": 1,
+          "similarity": 0.26721087098121643,
+          "translated_query": "table work có lapbigp và book"
+        },
+        {
+          "filename": "L25_V014/165.jpg",
+          "id": "L25_V014/165.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V014\\165.jpg",
+          "rank": 2,
+          "similarity": 0.2592225670814514,
+          "translated_query": "table work có lapbigp và book"
+        },
+        {
+          "filename": "L26_V159/156.jpg",
+          "id": "L26_V159/156.jpg",
+          "path": "static\\images\\Keyframes_L26_b\\keyframes\\L26_V159\\156.jpg",
+          "rank": 3,
+          "similarity": 0.25793084502220154,
+          "translated_query": "table work có lapbigp và book"
+        },
+        {
+          "filename": "L25_V014/314.jpg",
+          "id": "L25_V014/314.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V014\\314.jpg",
+          "rank": 4,
+          "similarity": 0.2576340138912201,
+          "translated_query": "table work có lapbigp và book"
+        },
+        {
+          "filename": "L22_V005/060.jpg",
+          "id": "L22_V005/060.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V005\\060.jpg",
+          "rank": 5,
+          "similarity": 0.25674864649772644,
+          "translated_query": "table work có lapbigp và book"
+        }
+      ],
+      "expected_keywords": [
+        "bàn",
+        "laptop"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "hoa đào hồng nở vào mùa xuân",
+      "description": "Thiên nhiên với mùa và màu sắc",
+      "search_time": 2.0897622108459473,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "translated_query": null,
+      "top_results": [
+        {
+          "filename": "L22_V010/178.jpg",
+          "id": "L22_V010/178.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V010\\178.jpg",
+          "rank": 1,
+          "similarity": 0.29710766673088074,
+          "translated_query": "flower đào lakeng blooming in spring"
+        },
+        {
+          "filename": "L22_V011/201.jpg",
+          "id": "L22_V011/201.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V011\\201.jpg",
+          "rank": 2,
+          "similarity": 0.2920804023742676,
+          "translated_query": "flower đào lakeng blooming in spring"
+        },
+        {
+          "filename": "L29_V012/396.jpg",
+          "id": "L29_V012/396.jpg",
+          "path": "static\\images\\Keyframes_L29\\keyframes\\L29_V012\\396.jpg",
+          "rank": 3,
+          "similarity": 0.2908875346183777,
+          "translated_query": "flower đào lakeng blooming in spring"
+        },
+        {
+          "filename": "L21_V031/047.jpg",
+          "id": "L21_V031/047.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V031\\047.jpg",
+          "rank": 4,
+          "similarity": 0.2895483374595642,
+          "translated_query": "flower đào lakeng blooming in spring"
+        },
+        {
+          "filename": "L29_V013/196.jpg",
+          "id": "L29_V013/196.jpg",
+          "path": "static\\images\\Keyframes_L29\\keyframes\\L29_V013\\196.jpg",
+          "rank": 5,
+          "similarity": 0.2893485426902771,
+          "translated_query": "flower đào lakeng blooming in spring"
+        }
+      ],
+      "expected_keywords": [
+        "hoa",
+        "mùa xuân"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "lá cây vàng rơi mùa thu",
+      "description": "Thiên nhiên với mùa và màu sắc",
+      "search_time": 2.0803942680358887,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "translated_query": null,
+      "top_results": [
+        {
+          "filename": "L24_V022/061.jpg",
+          "id": "L24_V022/061.jpg",
+          "path": "static\\images\\Keyframes_L24\\keyframes\\L24_V022\\061.jpg",
+          "rank": 1,
+          "similarity": 0.26568493247032166,
+          "translated_query": "leaf tree yellow rơi autumn"
+        },
+        {
+          "filename": "L29_V004/150.jpg",
+          "id": "L29_V004/150.jpg",
+          "path": "static\\images\\Keyframes_L29\\keyframes\\L29_V004\\150.jpg",
+          "rank": 2,
+          "similarity": 0.25580260157585144,
+          "translated_query": "leaf tree yellow rơi autumn"
+        },
+        {
+          "filename": "L27_V007/183.jpg",
+          "id": "L27_V007/183.jpg",
+          "path": "static\\images\\Keyframes_L27\\keyframes\\L27_V007\\183.jpg",
+          "rank": 3,
+          "similarity": 0.2536124587059021,
+          "translated_query": "leaf tree yellow rơi autumn"
+        },
+        {
+          "filename": "L21_V031/100.jpg",
+          "id": "L21_V031/100.jpg",
+          "path": "static\\images\\Keyframes_L21\\keyframes\\L21_V031\\100.jpg",
+          "rank": 4,
+          "similarity": 0.25270581245422363,
+          "translated_query": "leaf tree yellow rơi autumn"
+        },
+        {
+          "filename": "L27_V011/272.jpg",
+          "id": "L27_V011/272.jpg",
+          "path": "static\\images\\Keyframes_L27\\keyframes\\L27_V011\\272.jpg",
+          "rank": 5,
+          "similarity": 0.25241711735725403,
+          "translated_query": "leaf tree yellow rơi autumn"
+        }
+      ],
+      "expected_keywords": [
+        "lá",
+        "mùa thu"
+      ],
+      "found_keywords": []
+    },
+    {
+      "query": "tuyết trắng phủ kín núi mùa đông",
+      "description": "Thiên nhiên với mùa và màu sắc",
+      "search_time": 2.0840365886688232,
+      "count": 20,
+      "strategy": "advanced_ai_single",
+      "ai_engine": true,
+      "translated_query": null,
+      "top_results": [
+        {
+          "filename": "L22_V007/110.jpg",
+          "id": "L22_V007/110.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V007\\110.jpg",
+          "rank": 1,
+          "similarity": 0.27902424335479736,
+          "translated_query": "snow tsnakeg covering mountain winter"
+        },
+        {
+          "filename": "L25_V057/127.jpg",
+          "id": "L25_V057/127.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V057\\127.jpg",
+          "rank": 2,
+          "similarity": 0.2777215242385864,
+          "translated_query": "snow tsnakeg covering mountain winter"
+        },
+        {
+          "filename": "L22_V007/121.jpg",
+          "id": "L22_V007/121.jpg",
+          "path": "static\\images\\Keyframes_L22\\keyframes\\L22_V007\\121.jpg",
+          "rank": 3,
+          "similarity": 0.2765365242958069,
+          "translated_query": "snow tsnakeg covering mountain winter"
+        },
+        {
+          "filename": "L25_V057/126.jpg",
+          "id": "L25_V057/126.jpg",
+          "path": "static\\images\\Keyframes_L25\\keyframes\\L25_V057\\126.jpg",
+          "rank": 4,
+          "similarity": 0.27547842264175415,
+          "translated_query": "snow tsnakeg covering mountain winter"
+        },
+        {
+          "filename": "L29_V019/220.jpg",
+          "id": "L29_V019/220.jpg",
+          "path": "static\\images\\Keyframes_L29\\keyframes\\L29_V019\\220.jpg",
+          "rank": 5,
+          "similarity": 0.27379274368286133,
+          "translated_query": "snow tsnakeg covering mountain winter"
+        }
+      ],
+      "expected_keywords": [
+        "tuyết",
+        "núi"
+      ],
+      "found_keywords": []
+    }
+  ]
+}

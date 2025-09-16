@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI Challenge V - Event Retrieval System</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/optimized.css') }}">
+    
+    <style>
+        /* Additional styles for sidebar and enhanced layout */
+        .app-container {
+            display: flex;
+            min-height: 100vh;
+            background: var(--gradient-primary);
+        }
+
+        .sidebar {
+            width: 280px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-right: 1px solid var(--border-color);
+            padding: 2rem 0;
+            overflow-y: auto;
+            position: fixed;
+            height: 100vh;
+            z-index: 1000;
+        }
+
+        .main-content {
+            flex: 1;
+            margin-left: 280px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            min-height: 100vh;
+        }
+
+        .sidebar-section {
+            padding: 0 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .sidebar-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .sidebar-item {
+            display: flex;
+            align-items: center;
+            padding: 0.75rem 1rem;
+            margin: 0.25rem 0;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+
+        .sidebar-item:hover {
+            background: var(--light-bg);
+            color: var(--primary-color);
+        }
+
+        .sidebar-item.active {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .sidebar-item i {
+            margin-right: 0.75rem;
+            width: 16px;
+            text-align: center;
+        }
+
+        .search-header {
+            background: white;
+            padding: 1.5rem 2rem;
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .search-input-large {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            border: 2px solid var(--border-color);
+            border-radius: 12px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background: white;
+        }
+
+        .search-input-large:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+
+        .search-actions {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .btn-search-large {
+            background: var(--gradient-primary);
+            border: none;
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-search-large:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+            color: white;
+        }
+
+        .content-area {
+            padding: 2rem;
+        }
+
+        .image-grid-enhanced {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .image-card-enhanced {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border: 3px solid transparent;
+        }
+
+        .image-card-enhanced:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .image-card-enhanced.similarity-high {
+            border-color: #10b981;
+        }
+
+        .image-card-enhanced.similarity-medium {
+            border-color: #f59e0b;
+        }
+
+        .image-card-enhanced.similarity-low {
+            border-color: #ef4444;
+        }
+
+        .image-container-enhanced {
+            position: relative;
+            aspect-ratio: 16/9;
+            overflow: hidden;
+        }
+
+        .image-container-enhanced img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .image-card-enhanced:hover .image-container-enhanced img {
+            transform: scale(1.05);
+        }
+
+        .image-overlay-enhanced {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .image-card-enhanced:hover .image-overlay-enhanced {
+            opacity: 1;
+        }
+
+        .btn-overlay-enhanced {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.8rem;
+        }
+
+        .btn-overlay-enhanced:hover {
+            background: var(--accent-color);
+            transform: scale(1.05);
+        }
+
+        .image-info {
+            padding: 1rem;
+            background: white;
+        }
+
+        .image-filename {
+            font-weight: 600;
+            color: var(--text-primary);
+            font-size: 0.9rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .image-index {
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+        }
+
+        .similarity-score {
+            position: absolute;
+            top: 0.5rem;
+            right: 0.5rem;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            font-weight: 600;
+        }
+
+        .video-player {
+            position: fixed;
+            bottom: 0;
+            left: 280px;
+            right: 0;
+            background: rgba(0, 0, 0, 0.9);
+            padding: 1rem;
+            z-index: 1000;
+        }
+
+        .video-controls {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: white;
+        }
+
+        .video-progress {
+            flex: 1;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 2px;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .video-progress-bar {
+            height: 100%;
+            background: var(--primary-color);
+            border-radius: 2px;
+            width: 40%;
+        }
+
+        .video-time {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .loading-skeleton {
+            background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+            background-size: 200% 100%;
+            animation: loading 1.5s infinite;
+        }
+
+        @keyframes loading {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+
+        .skeleton-card {
+            height: 200px;
+            border-radius: 12px;
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                transform: translateX(-100%);
+                transition: transform 0.3s ease;
+            }
+
+            .sidebar.open {
+                transform: translateX(0);
+            }
+
+            .main-content {
+                margin-left: 0;
+            }
+
+            .video-player {
+                left: 0;
+            }
+
+            .image-grid-enhanced {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-section">
+                <div class="sidebar-title">Query Search</div>
+                <div class="sidebar-item active" data-search-type="single">
+                    <i class="fas fa-search"></i>
+                    Single Search
+                </div>
+                <div class="sidebar-item" data-search-type="fusion">
+                    <i class="fas fa-layer-group"></i>
+                    Fusion Search
+                </div>
+                <div class="sidebar-item" data-search-type="local">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Local Search
+                </div>
+                <div class="sidebar-item" data-search-type="group">
+                    <i class="fas fa-users"></i>
+                    Group Search
+                </div>
+                <div class="sidebar-item" data-search-type="hierarchy">
+                    <i class="fas fa-sitemap"></i>
+                    Hierarchy Search
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-title">Text Search</div>
+                <div class="sidebar-item" data-search-type="subtitle">
+                    <i class="fas fa-closed-captioning"></i>
+                    Subtitle Match
+                </div>
+                <div class="sidebar-item" data-search-type="ocr">
+                    <i class="fas fa-font"></i>
+                    OCR Match
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-title">Image Search</div>
+                <div class="sidebar-item" data-search-type="similar-image">
+                    <i class="fas fa-images"></i>
+                    Similar Image Search
+                </div>
+                <div class="sidebar-item" data-search-type="similar-frame">
+                    <i class="fas fa-film"></i>
+                    Similar Frame Search
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Search Header -->
+            <div class="search-header">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <input type="text" id="text_query" class="search-input-large" 
+                               placeholder="Nhập mô tả sự kiện bạn muốn tìm kiếm..." 
+                               value="{{ data.query if data.query else '' }}">
+                    </div>
+                    <div class="col-md-4">
+                        <div class="search-actions">
+                            <button class="btn btn-search-large" onclick="search();">
+                                <i class="fas fa-search"></i> Q Search
+                            </button>
+                            <button class="btn btn-outline-secondary" onclick="toggleSidebar();">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content Area -->
+            <div class="content-area">
+                <!-- Loading State -->
+                <div class="loading" id="loading">
+                    <div class="spinner"></div>
+                    <p>Đang tìm kiếm và tải kết quả...</p>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="skeleton-card loading-skeleton"></div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="skeleton-card loading-skeleton"></div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="skeleton-card loading-skeleton"></div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="skeleton-card loading-skeleton"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image Grid -->
+                <div id="div_img" class="image-grid-enhanced">
+                    <!-- Images will be loaded here -->
+                </div>
+
+                <!-- Empty State -->
+                <div class="empty-state" id="empty-state" style="display: none;">
+                    <i class="fas fa-images"></i>
+                    <h3>Không tìm thấy kết quả</h3>
+                    <p>Hãy thử tìm kiếm với từ khóa khác</p>
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination-section" id="div_page">
+                    <!-- Pagination will be loaded here -->
+                </div>
+
+                <div class="page-info" id="div_total_page">
+                    <!-- Page info will be loaded here -->
+                </div>
+            </div>
+
+            <!-- Video Player -->
+            <div class="video-player" id="video-player" style="display: none;">
+                <div class="video-controls">
+                    <button class="btn btn-sm btn-outline-light" onclick="toggleVideo();">
+                        <i class="fas fa-play"></i>
+                    </button>
+                    <div class="video-progress" onclick="seekVideo(event);">
+                        <div class="video-progress-bar" id="video-progress-bar"></div>
+                    </div>
+                    <div class="video-time">
+                        <span id="current-time">0:00</span> / <span id="total-time">0:00</span>
+                    </div>
+                    <button class="btn btn-sm btn-outline-light" onclick="toggleFullscreen();">
+                        <i class="fas fa-expand"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        var data = '{{ data|tojson }}';
+        data = data.replace(/\s/g, '');
+        data = data.replace(/\\/g, '/');
+        data = JSON.parse(data);
+
+        let currentSearchType = 'single';
+        let imageCache = new Map();
+        let lazyLoadObserver = null;
+
+        function showLoading() {
+            document.getElementById('loading').style.display = 'block';
+            document.getElementById('div_img').style.display = 'none';
+            document.getElementById('empty-state').style.display = 'none';
+        }
+
+        function hideLoading() {
+            document.getElementById('loading').style.display = 'none';
+            document.getElementById('div_img').style.display = 'grid';
+        }
+
+        function updateStats() {
+            const totalImages = document.getElementById('total-images');
+            const currentPage = document.getElementById('current-page');
+            const totalPages = document.getElementById('total-pages');
+
+            if (totalImages) {
+                totalImages.textContent = data.pagefile ? data.pagefile.length : 0;
+            }
+
+            if (totalPages) {
+                totalPages.textContent = data.num_page || 0;
+            }
+
+            if (currentPage) {
+                const url = new URL(window.location.href);
+                const currentIndex = parseInt(url.searchParams.get("index")) || 0;
+                currentPage.textContent = currentIndex + 1;
+            }
+        }
+
+        function add_paging() {
+            const paginationDiv = document.getElementById("div_page");
+            paginationDiv.innerHTML = '';
+            
+            const url = new URL(window.location.href);
+            const cur_index = parseInt(url.searchParams.get("index")) || 0;
+            const imgpath = url.searchParams.get("imgpath");
+
+            // Previous button
+            if (cur_index > 0) {
+                const prevBtn = createPageButton(cur_index - 1, '<i class="fas fa-chevron-left"></i>', imgpath);
+                paginationDiv.appendChild(prevBtn);
+            }
+
+            // Page numbers
+            let start = Math.max(0, cur_index - 2);
+            let end = Math.min(data.num_page - 1, cur_index + 2);
+
+            if (start > 0) {
+                const ellipsis = document.createElement('span');
+                ellipsis.className = 'page-btn';
+                ellipsis.textContent = '...';
+                ellipsis.style.pointerEvents = 'none';
+                paginationDiv.appendChild(ellipsis);
+            }
+
+            for (let i = start; i <= end; i++) {
+                const pageBtn = createPageButton(i, (i + 1).toString(), imgpath);
+                if (i === cur_index) {
+                    pageBtn.classList.add('active');
+                }
+                paginationDiv.appendChild(pageBtn);
+            }
+
+            if (end < data.num_page - 1) {
+                const ellipsis = document.createElement('span');
+                ellipsis.className = 'page-btn';
+                ellipsis.textContent = '...';
+                ellipsis.style.pointerEvents = 'none';
+                paginationDiv.appendChild(ellipsis);
+            }
+
+            // Next button
+            if (cur_index < data.num_page - 1) {
+                const nextBtn = createPageButton(cur_index + 1, '<i class="fas fa-chevron-right"></i>', imgpath);
+                paginationDiv.appendChild(nextBtn);
+            }
+
+            document.getElementById("div_total_page").innerHTML = `Trang ${cur_index + 1} / ${data.num_page} (Tổng cộng ${data.num_page} trang)`;
+        }
+
+        function createPageButton(index, text, imgpath) {
+            const btn = document.createElement('a');
+            btn.className = 'page-btn';
+            btn.href = `?index=${index}&imgpath=${imgpath || ''}`;
+            btn.innerHTML = text;
+            return btn;
+        }
+
+        function add_img() {
+            const div_img = document.getElementById("div_img");
+            div_img.innerHTML = '';
+            
+            if (!data.pagefile || data.pagefile.length === 0) {
+                document.getElementById('empty-state').style.display = 'block';
+                return;
+            }
+
+            data.pagefile.forEach((item, index) => {
+                const imageCard = createEnhancedImageCard(item, index);
+                div_img.appendChild(imageCard);
+            });
+
+            // Setup lazy loading
+            setupLazyLoading();
+        }
+
+        function createEnhancedImageCard(item, index) {
+            const imageCard = document.createElement('div');
+            imageCard.className = 'image-card-enhanced';
+            
+            // Add similarity class based on index (for demo)
+            if (index < 10) {
+                imageCard.classList.add('similarity-high');
+            } else if (index < 20) {
+                imageCard.classList.add('similarity-medium');
+            } else {
+                imageCard.classList.add('similarity-low');
+            }
+
+            // Extract filename from path
+            const filename = item.imgpath.split('/').pop().split('.')[0];
+            
+            imageCard.innerHTML = `
+                <div class="image-container-enhanced">
+                    <img data-src="get_img?fpath=${item.imgpath}" 
+                         alt="Image ${item.id}" 
+                         loading="lazy"
+                         onerror="this.src='static/images/404.jpg'">
+                    <div class="similarity-score">${Math.round((1 - index/50) * 100)}%</div>
+                    <div class="image-overlay-enhanced">
+                        <button class="btn-overlay-enhanced" onclick="go_img_search(${item.id})">
+                            <i class="fas fa-search"></i>
+                        </button>
+                        <button class="btn-overlay-enhanced" onclick="show_list_segment(${item.id})">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="image-info">
+                    <div class="image-filename">${filename}</div>
+                    <div class="image-index">ID: ${item.id}</div>
+                </div>
+            `;
+
+            return imageCard;
+        }
+
+        function setupLazyLoading() {
+            if (lazyLoadObserver) {
+                lazyLoadObserver.disconnect();
+            }
+
+            lazyLoadObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        if (img.dataset.src) {
+                            img.src = img.dataset.src;
+                            img.removeAttribute('data-src');
+                            lazyLoadObserver.unobserve(img);
+                        }
+                    }
+                });
+            }, {
+                rootMargin: '50px'
+            });
+
+            document.querySelectorAll('img[data-src]').forEach(img => {
+                lazyLoadObserver.observe(img);
+            });
+        }
+
+        function go_img_search(id) {
+            window.open("/imgsearch?imgid=" + id, '_blank');
+        }
+
+        function show_list_segment(id) {
+            window.open("/showsegment?imgid=" + id, '_blank');
+        }
+
+        function search() {
+            const text_query = document.getElementById('text_query').value.trim();
+            if (text_query) {
+                showLoading();
+                const searchParams = new URLSearchParams({
+                    textquery: text_query,
+                    search_type: currentSearchType
+                });
+                window.location.href = "/textsearch?" + searchParams.toString();
+            } else {
+                alert('Vui lòng nhập từ khóa tìm kiếm!');
+            }
+        }
+
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('open');
+        }
+
+        function setSearchType(type) {
+            currentSearchType = type;
+            
+            // Update active state
+            document.querySelectorAll('.sidebar-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            document.querySelector(`[data-search-type="${type}"]`).classList.add('active');
+        }
+
+        function toggleVideo() {
+            const player = document.getElementById('video-player');
+            const isVisible = player.style.display !== 'none';
+            player.style.display = isVisible ? 'none' : 'block';
+        }
+
+        function seekVideo(event) {
+            const progress = event.currentTarget;
+            const rect = progress.getBoundingClientRect();
+            const percent = (event.clientX - rect.left) / rect.width;
+            document.getElementById('video-progress-bar').style.width = (percent * 100) + '%';
+        }
+
+        function toggleFullscreen() {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen();
+            } else {
+                document.exitFullscreen();
+            }
+        }
+
+        function on_load() {
+            showLoading();
+            
+            const url = new URL(window.location.href);
+            const imgpath = url.searchParams.get("imgpath");
+            
+            if (data.query) {
+                document.getElementById("text_query").value = data.query;
+            }
+
+            // Bind sidebar events
+            document.querySelectorAll('.sidebar-item').forEach(item => {
+                item.addEventListener('click', () => {
+                    setSearchType(item.dataset.searchType);
+                });
+            });
+
+            setTimeout(() => {
+                add_paging();
+                add_img();
+                updateStats();
+                hideLoading();
+            }, 300);
+        }
+
+        // Enter key to search
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.getElementById('text_query');
+            searchInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    search();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

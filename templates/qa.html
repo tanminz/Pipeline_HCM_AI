@@ -1,0 +1,89 @@
+<html>
+<header>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>AIO-IR Q&A</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</header>
+<body onload="on_load();">
+  <style>
+    *{margin:0}
+    body{margin:0}
+    .container{width:100%;height:100%;background-color:#e0e5ec}
+    .search_container{width:100%;height:120px;display:grid;grid-template-columns:auto 300px 220px;border-bottom:5px solid #4dccc6}
+    .search{width:100%;height:100%;padding:20px}
+    .search label{position:absolute;font-size:30px;padding:10px}
+    .search input{width:96%;height:50px;border:none;border-radius:10px;padding-left:5%;font-size:20px}
+    .group_btn{width:100%;height:100%;padding-top:20px}
+    .group_btn button{width:130px;height:50px;border-radius:10px;margin-right:3%;color:white;font-size:20px}
+    .answer{display:flex;align-items:center;gap:10px;justify-content:flex-start;padding-top:20px}
+    .answer input{width:200px;height:50px;border:none;border-radius:10px;padding-left:10px;font-size:20px}
+    .btn-13{background-color:#89d8d3;background-image:linear-gradient(315deg,#89d8d3 0%,#03c8a8 74%);border:none;z-index:1;color:#fff}
+    #div_img{display:flex;flex-direction:row;flex-wrap:wrap;padding:20px;background-color:#e0e5ec}
+    .container_img_btn{position:relative;width:100%;max-width:318px;display:grid;grid-template-columns:auto auto auto auto;padding:1%;cursor:pointer}
+    .container_img_btn img{width:100%;height:100%}
+    .container_img_btn .btn_knn{display:none;position:absolute;top:50%;left:10%;background-color:#4dccc6;color:white;font-size:16px;padding:5px 12px;cursor:pointer;border-radius:5px;text-align:center}
+  </style>
+  <div class="container">
+    <div class="search_container">
+      <div class="search">
+        <label for=""><i class="fa fa-search" aria-hidden="true"></i></label>
+        <input id="text_query" type="text" placeholder="Text query (mô tả sự kiện)">
+      </div>
+      <div class="answer">
+        <input id="answer" type="text" placeholder="Answer (0-9...)">
+      </div>
+      <div class="group_btn">
+        <button class="btn-13" onclick="qaSearch();"><span>Submit</span></button>
+      </div>
+    </div>
+
+    <div id="div_img"></div>
+
+    <div style="height:5px;width:100%;background-color:black;"></div>
+    <div id="div_page"></div>
+    <div id="div_total_page">Total: 0 page</div>
+    <div style="margin-bottom:50px;"></div>
+  </div>
+
+  <script>
+    var data = '{{ data|tojson }}';
+    data = data.replace(/\s/g, '');
+    data = data.replace(/\\/g, '/');
+    data = JSON.parse(data);
+
+    function add_paging(){
+      document.getElementById("div_total_page").innerHTML = "Total: "+data['num_page'].toString()+" page";
+    }
+
+    function add_img(){
+      let pagefile_list = data['pagefile'] || [];
+      pagefile_list.forEach((item,index) => {
+        $("#div_img").append(
+          `<div class= "container_img_btn">
+            <img src="get_img?fpath=${item.imgpath}">
+           </div>`
+        )
+      });
+    }
+
+    function on_load(){
+      if("query" in data){
+        document.getElementById("text_query").value = data["query"]
+      }
+      if("answer" in data){
+        document.getElementById("answer").value = data["answer"]
+      }
+      add_paging();
+      add_img();
+    }
+
+    function qaSearch(){
+      const text_query = document.getElementById('text_query').value;
+      const answer = document.getElementById('answer').value;
+      window.location.href = "/qa_search?textquery="+encodeURIComponent(text_query)+"&answer="+encodeURIComponent(answer);
+    }
+  </script>
+</body>
+</html> 

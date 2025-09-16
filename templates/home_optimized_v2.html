@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Challenge V - Image Search</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background: #f5f5f5; }
+        .header { background: #2c3e50; color: white; padding: 10px 20px; }
+        .search-container { background: white; padding: 15px 20px; border-bottom: 1px solid #ddd; display: flex; gap: 10px; align-items: center; }
+        .search-input { flex: 1; padding: 8px 12px; border: 1px solid #ddd; border-radius: 4px; }
+        .search-btn { padding: 8px 16px; background: #3498db; color: white; border: none; border-radius: 4px; cursor: pointer; }
+        .search-type { display: flex; gap: 10px; }
+        .search-type-btn { padding: 6px 12px; border: 1px solid #ddd; background: white; cursor: pointer; }
+        .search-type-btn.active { background: #3498db; color: white; }
+        .status-bar { background: #ecf0f1; padding: 8px 20px; font-size: 12px; color: #666; }
+        .image-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; padding: 20px; }
+        .image-card { background: white; border: 1px solid #ddd; border-radius: 4px; overflow: hidden; cursor: pointer; }
+        .image-container { position: relative; width: 100%; height: 150px; overflow: hidden; }
+        .image-container img { width: 100%; height: 100%; object-fit: cover; }
+        .image-info { padding: 8px; font-size: 11px; }
+        .image-id { font-weight: bold; color: #2c3e50; }
+        .similarity-score { position: absolute; top: 5px; right: 5px; background: rgba(0,0,0,0.7); color: white; padding: 2px 6px; border-radius: 3px; font-size: 10px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>AI Challenge V - Image Search</h1>
+        <div id="status">Loading...</div>
+    </div>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" class="search-input" placeholder="Nhập từ khóa tìm kiếm..." value="car driving">
+        <button id="searchBtn" class="search-btn">Tìm kiếm</button>
+        <div class="search-type">
+            <button class="search-type-btn active" data-type="single">Single Search</button>
+            <button class="search-type-btn" data-type="local">Local Search</button>
+        </div>
+    </div>
+
+    <div class="status-bar">
+        <span id="resultCount">Đang tải...</span>
+        <span id="systemInfo">System: Loading...</span>
+    </div>
+
+    <div id="imageGrid" class="image-grid">
+        <div>Đang tải ảnh...</div>
+    </div>
+
+    <script>
+        let currentSearchType = 'single';
+        let searchResults = [];
+
+        document.addEventListener('DOMContentLoaded', function() {
+            setupEventListeners();
+            checkSystemStatus();
+            loadInitialImages();
+        });
+
+        function setupEventListeners() {
+            document.getElementById('searchBtn').addEventListener('click', performSearch);
+            document.getElementById('searchInput').addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') performSearch();
+            });
+            document.querySelectorAll('.search-type-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    document.querySelectorAll('.search-type-btn').forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    currentSearchType = this.dataset.type;
+                });
+            });
+        }
+
+        function checkSystemStatus() {
+            fetch('/api/status')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('status').textContent = `Images: ${data.total_images} | Memory: ${data.memory_usage_mb}MB`;
+                    document.getElementById('systemInfo').textContent = `System: Ready`;
+                })
+                .catch(error => {
+                    document.getElementById('status').textContent = 'System: Error';
+                });
+        }
+
+        function loadInitialImages() {
+            fetch('/api/images?page=1&per_page=300')
+                .then(response => response.json())
+                .then(data => {
+                    displayImages(data.images);
+                })
+                .catch(error => {
+                    document.getElementById('imageGrid').innerHTML = '<div>Không thể tải ảnh</div>';
+                });
+        }
+
+        function performSearch() {
+            const query = document.getElementById('searchInput').value.trim();
+            if (!query) return;
+
+            fetch(`/api/search?q=${encodeURIComponent(query)}&type=${currentSearchType}&k=300`)
+                .then(response => response.json())
+                .then(data => {
+                    searchResults = data.results;
+                    displaySearchResults(data.results);
+                    document.getElementById('resultCount').textContent = `Tìm thấy ${data.count} kết quả cho "${query}"`;
+                })
+                .catch(error => {
+                    document.getElementById('imageGrid').innerHTML = '<div>Tìm kiếm thất bại</div>';
+                });
+        }
+
+        function displayImages(images) {
+            const grid = document.getElementById('imageGrid');
+            grid.innerHTML = '';
+
+            if (!images || images.length === 0) {
+                grid.innerHTML = '<div>Không có ảnh nào</div>';
+                return;
+            }
+
+            images.forEach(image => {
+                const card = createImageCard(image);
+                grid.appendChild(card);
+            });
+        }
+
+        function displaySearchResults(results) {
+            const grid = document.getElementById('imageGrid');
+            grid.innerHTML = '';
+
+            if (!results || results.length === 0) {
+                grid.innerHTML = '<div>Không tìm thấy kết quả</div>';
+                return;
+            }
+
+            results.forEach(result => {
+                const card = createImageCard(result, true);
+                grid.appendChild(card);
+            });
+        }
+
+        function createImageCard(image, isSearchResult = false) {
+            const card = document.createElement('div');
+            card.className = 'image-card';
+            
+            // Create image ID based on folder + filename
+            const imageId = `${image.filename.split('/')[0]}/${image.filename.split('/').pop()}`;
+            
+            // Use the correct image path for thumbnail
+            const imagePath = image.filename || image.path;
+            
+            card.innerHTML = `
+                <div class="image-container">
+                    <img src="/api/thumbnail/${imagePath}" alt="${image.filename}" onerror="this.src='/images/${imagePath}'">
+                    ${isSearchResult ? `<div class="similarity-score">${(image.similarity * 100).toFixed(1)}%</div>` : ''}
+                </div>
+                <div class="image-info">
+                    <div class="image-id">${imageId}</div>
+                    <div>${image.filename}</div>
+                    <div style="margin-top: 8px; display: flex; gap: 5px;">
+                        <button onclick="viewImage('${imagePath}')" style="padding: 4px 8px; background: #3498db; color: white; border: none; border-radius: 3px; cursor: pointer; font-size: 10px;">👁️ View</button>
+                        <button onclick="searchNearbyFrames('${imagePath}')" style="padding: 4px 8px; background: #27ae60; color: white; border: none; border-radius: 3px; cursor: pointer; font-size: 10px;">🔍 Search</button>
+                    </div>
+                </div>
+            `;
+
+            return card;
+        }
+
+        function viewImage(imagePath) {
+            // Open image in new tab
+            window.open(`/api/image/${imagePath}`, '_blank');
+        }
+
+        function searchNearbyFrames(imagePath) {
+            // Navigate to nearby frames page
+            window.location.href = `/nearby_frames?frame_id=${imagePath}`;
+        }
+
+        setInterval(checkSystemStatus, 30000);
+    </script>
+</body>
+</html>

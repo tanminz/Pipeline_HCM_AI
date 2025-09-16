@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frame Lân Cận - HCMC AI Challenge</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .frame-info {
+            background: #f8f9fa;
+            padding: 20px;
+            border-bottom: 1px solid #e9ecef;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .frame-details {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .frame-detail {
+            background: white;
+            padding: 10px 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .frame-detail strong {
+            color: #667eea;
+        }
+
+        .controls {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #5a6fd8;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: #6c757d;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background: #5a6268;
+        }
+
+        .btn-success {
+            background: #28a745;
+            color: white;
+        }
+
+        .btn-success:hover {
+            background: #218838;
+        }
+
+        .frames-grid {
+            padding: 30px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .frame-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: all 0.3s ease;
+            border: 3px solid transparent;
+        }
+
+        .frame-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .frame-card.target {
+            border-color: #28a745;
+            box-shadow: 0 0 20px rgba(40, 167, 69, 0.3);
+        }
+
+        .frame-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            background: #f8f9fa;
+        }
+
+        .frame-info-card {
+            padding: 15px;
+        }
+
+        .frame-title {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 8px;
+            font-size: 0.9em;
+        }
+
+        .frame-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 0.8em;
+            color: #666;
+        }
+
+        .frame-actions {
+            display: flex;
+            gap: 8px;
+        }
+
+        .btn-small {
+            padding: 6px 12px;
+            font-size: 0.8em;
+            border-radius: 6px;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 50px;
+            color: #666;
+        }
+
+        .loading::after {
+            content: '';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #667eea;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-left: 10px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .error {
+            background: #f8d7da;
+            color: #721c24;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px;
+            border: 1px solid #f5c6cb;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 6px;
+            background: #e9ecef;
+            border-radius: 3px;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            transition: width 0.3s ease;
+        }
+
+        .back-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+
+        @media (max-width: 768px) {
+            .frames-grid {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                gap: 15px;
+                padding: 20px;
+            }
+
+            .frame-info {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .controls {
+                flex-wrap: wrap;
+            }
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background: #f8f9fa;
+            border-top: 1px solid #e9ecef;
+        }
+
+        .pagination button {
+            padding: 8px 16px;
+            margin: 0 5px;
+        }
+
+        .pagination button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .frame-stats {
+            background: #e3f2fd;
+            padding: 15px 20px;
+            margin: 20px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .frame-stats .stat {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 10px;
+        }
+
+        .frame-stats .stat-value {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .frame-stats .stat-label {
+            font-size: 0.8em;
+            color: #666;
+            margin-top: 2px;
+        }
+
+        .target-frame-highlight {
+            background: linear-gradient(45deg, #28a745, #20c997);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 8px;
+            margin: 20px;
+            text-align: center;
+            font-weight: bold;
+            box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <a href="/" class="btn btn-secondary back-btn">← Quay lại</a>
+    
+    <div class="container">
+        <div class="header">
+            <h1>🔍 Frame Lân Cận</h1>
+            <p>Tìm kiếm các frame gần nhau trong cùng video</p>
+            <div style="margin-top: 10px; font-size: 0.9em; opacity: 0.8;">
+                <small>⌨️ Shortcuts: ←/→ (Trang), Home/End (Đầu/Cuối), T (Scroll to Target), ESC (Quay lại)</small>
+                <br><small>🎯 Auto-scroll: Tự động scroll đến frame target khi load trang</small>
+            </div>
+        </div>
+
+        <div class="frame-info">
+            <div class="frame-details">
+                <div class="frame-detail">
+                    <strong>Video:</strong> <span id="video-name">-</span>
+                </div>
+                <div class="frame-detail">
+                    <strong>Frame hiện tại:</strong> <span id="current-frame">-</span>
+                </div>
+                <div class="frame-detail">
+                    <strong>Tổng frames:</strong> <span id="total-frames">-</span>
+                </div>
+                <div class="frame-detail">
+                    <strong>Vị trí:</strong> <span id="frame-position">-</span>
+                </div>
+            </div>
+            <div class="controls">
+                <button class="btn btn-primary" onclick="showAllFrames()">🔍 Xem TẤT CẢ Frames</button>
+                <button class="btn btn-success" onclick="goToTargetFrame()">🎯 Đến Frame Target</button>
+                <button class="btn btn-secondary" onclick="scrollToTargetFrame()">📍 Scroll to Target</button>
+                <button class="btn btn-secondary" onclick="togglePagination()">📄 Bật/Tắt Phân Trang</button>
+            </div>
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
+        </div>
+
+        <div id="frames-container">
+            <div class="loading">Đang tải thông tin frame...</div>
+        </div>
+
+        <div id="pagination-container" style="display: none;">
+            <div class="pagination">
+                <button id="prev-page" class="btn btn-secondary" onclick="changePage(-1)">← Trước</button>
+                <span id="page-info" style="margin: 0 20px; font-weight: bold;"></span>
+                <button id="next-page" class="btn btn-secondary" onclick="changePage(1)">Sau →</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentFrameId = '';
+        let currentVideoName = '';
+        let currentFrameNumber = 0;
+        let currentPage = 1;
+        let totalPages = 1;
+        let perPage = 100;  // Default to 100 frames per page
+        let showAllFramesMode = false;  // New mode to show all frames
+        let allFramesData = [];  // Store all frames data
+
+        // Get frame ID from URL parameter
+        function getFrameIdFromUrl() {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get('frame_id');
+        }
+
+        // Load frame information
+        async function loadFrameInfo() {
+            const frameId = getFrameIdFromUrl();
+            if (!frameId) {
+                showError('Không tìm thấy frame ID');
+                return;
+            }
+
+            currentFrameId = frameId;
+            
+            try {
+                const response = await fetch(`/api/frame_info?frame_id=${frameId}`);
+                const data = await response.json();
+                
+                if (data.error) {
+                    showError(data.error);
+                    return;
+                }
+
+                // Update frame info
+                document.getElementById('video-name').textContent = data.video_name;
+                document.getElementById('current-frame').textContent = data.frame_number;
+                document.getElementById('total-frames').textContent = data.total_frames;
+                document.getElementById('frame-position').textContent = `${data.frame_position}/${data.total_frames}`;
+
+                currentVideoName = data.video_name;
+                currentFrameNumber = data.frame_number;
+
+                // Update progress bar
+                const progress = (data.frame_position / data.total_frames) * 100;
+                document.getElementById('progress-fill').style.width = `${progress}%`;
+
+                // Load nearby frames
+                await searchNearbyFrames();
+
+            } catch (error) {
+                showError('Lỗi khi tải thông tin frame: ' + error.message);
+            }
+        }
+
+        // Search nearby frames with pagination
+        async function searchNearbyFrames() {
+            if (!currentFrameId) return;
+
+            const container = document.getElementById('frames-container');
+            
+            container.innerHTML = '<div class="loading">Đang tải frames...</div>';
+
+            try {
+                // Always start with page 1 to auto-navigate to target frame
+                const response = await fetch(`/api/search_nearby_frames_ui?frame_id=${currentFrameId}&page=1&per_page=${perPage}`);
+                const data = await response.json();
+                
+                if (data.error) {
+                    showError(data.error);
+                    return;
+                }
+
+                displayFrames(data.results, data);
+
+            } catch (error) {
+                showError('Lỗi khi tải frames: ' + error.message);
+            }
+        }
+
+        // Show all frames without pagination
+        async function showAllFrames() {
+            if (!currentFrameId) return;
+
+            const container = document.getElementById('frames-container');
+            
+            container.innerHTML = '<div class="loading">Đang tải TẤT CẢ frames...</div>';
+
+            try {
+                // Get all frames by using a very large per_page value
+                const response = await fetch(`/api/search_nearby_frames_ui?frame_id=${currentFrameId}&page=1&per_page=10000`);
+                const data = await response.json();
+                
+                if (data.error) {
+                    showError(data.error);
+                    return;
+                }
+
+                showAllFramesMode = true;
+                allFramesData = data.results;
+                
+                // Display all frames without pagination
+                displayAllFrames(data.results, data);
+
+            } catch (error) {
+                showError('Lỗi khi tải tất cả frames: ' + error.message);
+            }
+        }
+
+        // Display frames in grid with pagination
+        function displayFrames(frames, metadata) {
+            const container = document.getElementById('frames-container');
+            const paginationContainer = document.getElementById('pagination-container');
+            
+            if (!frames || frames.length === 0) {
+                container.innerHTML = '<div class="error">Không tìm thấy frames</div>';
+                paginationContainer.style.display = 'none';
+                return;
+            }
+
+            const pagination = metadata.pagination;
+            currentPage = pagination.current_page;
+            totalPages = pagination.total_pages;
+
+            // Show target frame highlight with auto-navigation info
+            let html = `
+                <div class="target-frame-highlight">
+                    🎯 Frame Target: ${metadata.target_frame} (Vị trí ${metadata.target_position}/${metadata.total_frames})
+                    ${metadata.target_page && metadata.target_page !== currentPage ? 
+                        `<br><small>✨ Tự động chuyển đến trang ${currentPage} và scroll đến frame target</small>` : 
+                        '<br><small>✨ Frame target đã hiển thị trên trang này</small>'}
+                </div>
+            `;
+
+            // Show statistics
+            html += `
+                <div class="frame-stats">
+                    <div class="stat">
+                        <div class="stat-value">${metadata.total_frames}</div>
+                        <div class="stat-label">Tổng Frames</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">${pagination.total_pages}</div>
+                        <div class="stat-label">Tổng Trang</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">${pagination.current_page}</div>
+                        <div class="stat-label">Trang Hiện Tại</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">${frames.length}</div>
+                        <div class="stat-label">Frames Trang Này</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">${pagination.start_index}-${pagination.end_index}</div>
+                        <div class="stat-label">Phạm Vi</div>
+                    </div>
+                    ${metadata.target_page ? `
+                    <div class="stat">
+                        <div class="stat-value">${metadata.target_page}</div>
+                        <div class="stat-label">Trang Target</div>
+                    </div>
+                    ` : ''}
+                </div>
+            `;
+
+            html += '<div class="frames-grid">';
+
+            frames.forEach(frame => {
+                const targetClass = frame.is_target ? 'target' : '';
+                const targetBadge = frame.is_target ? '<span style="background: #28a745; color: white; padding: 2px 6px; border-radius: 4px; font-size: 0.7em; margin-left: 5px;">TARGET</span>' : '';
+                const targetId = frame.is_target ? 'id="target-frame"' : '';
+                
+                html += `
+                    <div class="frame-card ${targetClass}" ${targetId}>
+                        <img src="${frame.thumbnail_url}" alt="${frame.filename}" class="frame-image" 
+                             onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDIwMCAxODAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMTgwIiBmaWxsPSIjRjVGNUY1Ii8+Cjx0ZXh0IHg9IjEwMCIgeT0iOTAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzk5OTk5OSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+RnJhbWUgSW1hZ2U8L3RleHQ+Cjwvc3ZnPgo='">
+                        <div class="frame-info-card">
+                            <div class="frame-title">${frame.filename} ${targetBadge}</div>
+                            <div class="frame-meta">
+                                <span>Frame ${frame.frame_number}</span>
+                                <span>Vị trí: ${frame.rank}</span>
+                            </div>
+                            <div class="frame-actions">
+                                <button class="btn btn-primary btn-small" onclick="viewFrame('${frame.filename}')">👁️ Xem</button>
+                                <button class="btn btn-success btn-small" onclick="searchNearbyFromFrame('${frame.filename}')">🔍 Tìm Lân Cận</button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+
+            html += '</div>';
+            container.innerHTML = html;
+
+            // Update pagination
+            updatePagination(pagination);
+            
+            // Auto-scroll to target frame after a short delay to ensure DOM is ready
+            setTimeout(() => {
+                scrollToTargetFrame();
+            }, 500);
+        }
+
+        // Display all frames without pagination
+        function displayAllFrames(frames, metadata) {
+            const container = document.getElementById('frames-container');
+            const paginationContainer = document.getElementById('pagination-container');
+            
+            if (!frames || frames.length === 0) {
+                container.innerHTML = '<div class="error">Không tìm thấy frames</div>';
+                paginationContainer.style.display = 'none';
+                return;
+            }
+
+            // Show target frame highlight
+            let html = `
+                <div class="target-frame-highlight">
+                    🎯 Frame Target: ${metadata.target_frame} (Vị trí ${metadata.target_position}/${metadata.total_frames})
+                    <br><small>✨ Hiển thị TẤT CẢ ${frames.length} frames - Không phân trang</small>
+                </div>
+            `;
+
+            // Show statistics for all frames
+            html += `
+                <div class="frame-stats">
+                    <div class="stat">
+                        <div class="stat-value">${metadata.total_frames}</div>
+                        <div class="stat-label">Tổng Frames</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">${frames.length}</div>
+                        <div class="stat-label">Frames Hiển Thị</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">${metadata.target_position}</div>
+                        <div class="stat-label">Vị Trí Target</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">1</div>
+                        <div class="stat-label">Trang</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">1-${frames.length}</div>
+                        <div class="stat-label">Phạm Vi</div>
+                    </div>
+                </div>
+            `;
+
+            html += '<div class="frames-grid">';
+
+            frames.forEach(frame => {
+                const targetClass = frame.is_target ? 'target' : '';
+                const targetBadge = frame.is_target ? '<span style="background: #28a745; color: white; padding: 2px 6px; border-radius: 4px; font-size: 0.7em; margin-left: 5px;">TARGET</span>' : '';
+                const targetId = frame.is_target ? 'id="target-frame"' : '';
+                
+                html += `
+                    <div class="frame-card ${targetClass}" ${targetId}>
+                        <img src="${frame.thumbnail_url}" alt="${frame.filename}" class="frame-image" 
+                             onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDIwMCAxODAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMTgwIiBmaWxsPSIjRjVGNUY1Ii8+Cjx0ZXh0IHg9IjEwMCIgeT0iOTAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzk5OTk5OSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+RnJhbWUgSW1hZ2U8L3RleHQ+Cjwvc3ZnPgo='">
+                        <div class="frame-info-card">
+                            <div class="frame-title">${frame.filename} ${targetBadge}</div>
+                            <div class="frame-meta">
+                                <span>Frame ${frame.frame_number}</span>
+                                <span>Vị trí: ${frame.rank}</span>
+                            </div>
+                            <div class="frame-actions">
+                                <button class="btn btn-primary btn-small" onclick="viewFrame('${frame.filename}')">👁️ Xem</button>
+                                <button class="btn btn-success btn-small" onclick="searchNearbyFromFrame('${frame.filename}')">🔍 Tìm Lân Cận</button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+
+            html += '</div>';
+            container.innerHTML = html;
+
+            // Hide pagination for all frames mode
+            paginationContainer.style.display = 'none';
+            
+            // Auto-scroll to target frame after a short delay to ensure DOM is ready
+            setTimeout(() => {
+                scrollToTargetFrame();
+            }, 500);
+        }
+
+        // Scroll to target frame (only scroll to target, not to top)
+        function scrollToTargetFrame() {
+            const targetFrame = document.getElementById('target-frame');
+            if (targetFrame) {
+                // Add a subtle highlight animation
+                targetFrame.style.animation = 'pulse 2s ease-in-out';
+                
+                // Scroll to target frame with smooth animation
+                targetFrame.scrollIntoView({ 
+                    behavior: 'smooth', 
+                    block: 'center',
+                    inline: 'center'
+                });
+                
+                // Remove animation after 2 seconds
+                setTimeout(() => {
+                    targetFrame.style.animation = '';
+                }, 2000);
+                
+                console.log('🎯 Scrolled to target frame');
+            } else {
+                console.log('⚠️ Target frame not found on current page');
+            }
+        }
+
+        // Update pagination controls
+        function updatePagination(pagination) {
+            const paginationContainer = document.getElementById('pagination-container');
+            const pageInfo = document.getElementById('page-info');
+            const prevBtn = document.getElementById('prev-page');
+            const nextBtn = document.getElementById('next-page');
+
+            pageInfo.textContent = `Trang ${pagination.current_page} / ${pagination.total_pages}`;
+            prevBtn.disabled = !pagination.has_prev;
+            nextBtn.disabled = !pagination.has_next;
+
+            paginationContainer.style.display = 'flex';
+        }
+
+        // Change page (keep scroll to top behavior)
+        async function changePage(delta) {
+            const newPage = currentPage + delta;
+            if (newPage >= 1 && newPage <= totalPages) {
+                currentPage = newPage;
+                await searchNearbyFrames();
+                // Scroll to top for normal page navigation
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        }
+
+        // Toggle pagination mode
+        function togglePagination() {
+            if (showAllFramesMode) {
+                // Switch back to pagination mode
+                showAllFramesMode = false;
+                searchNearbyFrames();
+            } else {
+                // Switch to all frames mode
+                showAllFrames();
+            }
+        }
+
+        // Go to target frame page
+        async function goToTargetFrame() {
+            if (!currentFrameId) return;
+
+            try {
+                const response = await fetch(`/api/frame_info?frame_id=${currentFrameId}`);
+                const data = await response.json();
+                
+                if (data.error) {
+                    showError(data.error);
+                    return;
+                }
+
+                // Calculate which page contains the target frame
+                const targetPosition = data.frame_position;
+                const targetPage = Math.ceil(targetPosition / perPage);
+                
+                if (targetPage !== currentPage) {
+                    currentPage = targetPage;
+                    await searchNearbyFrames();
+                    // Don't scroll to top, just scroll to target frame
+                    setTimeout(() => {
+                        scrollToTargetFrame();
+                    }, 1000);
+                } else {
+                    // If already on target page, just scroll to target frame
+                    scrollToTargetFrame();
+                }
+
+            } catch (error) {
+                showError('Lỗi khi chuyển đến frame target: ' + error.message);
+            }
+        }
+
+        // View specific frame
+        function viewFrame(frameId) {
+            // Open frame in new tab or modal
+            window.open(`/api/image/${frameId}`, '_blank');
+        }
+
+        // Search nearby frames from a specific frame
+        function searchNearbyFromFrame(frameId) {
+            window.location.href = `/nearby_frames?frame_id=${frameId}`;
+        }
+
+        // Show error message
+        function showError(message) {
+            const container = document.getElementById('frames-container');
+            container.innerHTML = `<div class="error">❌ ${message}</div>`;
+            document.getElementById('pagination-container').style.display = 'none';
+        }
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function() {
+            loadFrameInfo();
+        });
+
+        // Add keyboard shortcuts
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                window.location.href = '/';
+            } else if (e.key === 'ArrowLeft' && !e.ctrlKey) {
+                e.preventDefault();
+                changePage(-1);
+            } else if (e.key === 'ArrowRight' && !e.ctrlKey) {
+                e.preventDefault();
+                changePage(1);
+            } else if (e.key === 'Home') {
+                e.preventDefault();
+                currentPage = 1;
+                searchNearbyFrames();
+            } else if (e.key === 'End') {
+                e.preventDefault();
+                currentPage = totalPages;
+                searchNearbyFrames();
+            } else if (e.key === 't' || e.key === 'T') {
+                e.preventDefault();
+                scrollToTargetFrame();
+            }
+        });
+
+        // Add CSS animation for target frame highlight
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes pulse {
+                0% { 
+                    box-shadow: 0 0 20px rgba(40, 167, 69, 0.3);
+                    transform: scale(1);
+                }
+                50% { 
+                    box-shadow: 0 0 30px rgba(40, 167, 69, 0.6);
+                    transform: scale(1.02);
+                }
+                100% { 
+                    box-shadow: 0 0 20px rgba(40, 167, 69, 0.3);
+                    transform: scale(1);
+                }
+            }
+            
+            .frame-card.target {
+                border-color: #28a745;
+                box-shadow: 0 0 20px rgba(40, 167, 69, 0.3);
+                transition: all 0.3s ease;
+            }
+            
+            .frame-card.target:hover {
+                transform: translateY(-5px) scale(1.02);
+                box-shadow: 0 8px 25px rgba(40, 167, 69, 0.4);
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
